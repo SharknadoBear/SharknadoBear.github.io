@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+<article class="reading-page shell">
+  <a class="back-link" href="{% if kind == 'map' %}/projects/nice-maps-and-wiggling-lines/{% elif kind == 'plushy' %}/projects/home-plushy-demographic/{% else %}/journal/{% endif %}">← Back to {% if kind == "map" %}the maps{% elif kind == "plushy" %}the census{% else %}the journal{% endif %}</a>
+  <header class="article-header"><div class="eyebrow">{{ kind or "note" }} <span aria-hidden="true">/</span> <time datetime="{{ date | dateISO }}">{{ date | readableDate }}</time></div><h1>{{ title }}</h1>{% if summary %}<p class="lead">{{ summary }}</p>{% endif %}</header>
+  {% if image %}<figure class="entry-image"><img src="{{ image }}" alt="{{ imageAlt }}">{% if caption %}<figcaption>{{ caption }}</figcaption>{% endif %}</figure>{% endif %}
+  <div class="prose">{{ content | safe }}</div>
+  {% if sourceUrl %}<p class="source-credit">Source: <a href="{{ sourceUrl }}">{{ sourceLabel or sourceUrl }}</a></p>{% endif %}
+  {% if idCard or petPackage %}<div class="downloads">{% if idCard %}<a class="button" href="{{ idCard }}" download>Download ID card <span aria-hidden="true">↓</span></a>{% endif %}{% if petPackage %}<a class="button button-outline" href="{{ petPackage }}" download>Download Codex pet package <span aria-hidden="true">↓</span></a>{% endif %}</div>{% endif %}
+  {% if project %}{% for item in projects %}{% if item.id == project %}<p class="project-return">Filed under <a href="{{ item.url }}">{{ item.title }}</a></p>{% endif %}{% endfor %}{% endif %}
+</article>

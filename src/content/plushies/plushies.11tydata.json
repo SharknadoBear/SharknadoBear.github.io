@@ -1,0 +1,6 @@
+{
+  "layout": "layouts/entry.njk",
+  "kind": "plushy",
+  "project": "home-plushy-demographic",
+  "permalink": "/projects/home-plushy-demographic/{{ page.fileSlug }}/"
+}

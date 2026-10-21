@@ -1,0 +1,15 @@
+---
+layout: layouts/project.njk
+title: Home Plushy Demographic
+projectId: home-plushy-demographic
+permalink: /projects/home-plushy-demographic/
+number: "02"
+label: THE HOUSEHOLD CENSUS
+intro: Every home has its inhabitants. Some of ours happen to be exceptionally soft.
+status: The census is getting started
+art: plushies
+artNote: important citizens, soft credentials
+---
+<section class="project-story"><p class="eyebrow">THE IDEA</p><h2>A census with<br> a softer side.</h2><div class="prose"><p>This is the future home of all the plushy animals at my places: their names, their stories, their particular personalities, and the little details that make each one themselves.</p><p>Every resident will eventually have a profile, a downloadable ID card, and a Codex pet package—so a small version of them can keep you company on screen, too.</p></div></section>
+<section class="resident-kit" aria-labelledby="resident-kit-title"><h2 id="resident-kit-title">A little kit for every resident.</h2><div class="kit-grid"><div><span>01 / THE STORY</span><h3>A plushy profile</h3><p>A portrait, a name, and the things worth knowing about this particular inhabitant.</p></div><div><span>02 / THE CREDENTIALS</span><h3>An ID of their own</h3><p>A downloadable identity card. Very official business for a very soft citizen.</p></div><div><span>03 / THE COMPANION</span><h3>A Codex pet package</h3><p>A downloadable digital companion, made individually for each plushy.</p></div></div></section>
+<section class="collection-section"><div class="section-heading"><h2>Meet the residents</h2><span class="hand-note">roll call, coming soon</span></div>{% if collections.plushies.length %}{% set entries = collections.plushies %}{% include "entry-list.njk" %}{% else %}<div class="collection-empty"><span class="collection-symbol" aria-hidden="true">♡</span><h3>The residents are getting ready.</h3><p>The first profiles, ID cards, and pet packages will appear here<br> once their portraits and stories are gathered.</p></div>{% endif %}</section>

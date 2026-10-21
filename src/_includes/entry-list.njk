@@ -1,0 +1,5 @@
+<div class="entry-list">
+{% for entry in entries %}
+  <article class="entry-preview"><div class="entry-meta"><span>{{ entry.data.kind or "note" }}</span><time datetime="{{ entry.date | dateISO }}">{{ entry.date | readableDate }}</time></div><h3><a href="{{ entry.url }}">{{ entry.data.title }} <span aria-hidden="true">↗</span></a></h3>{% if entry.data.summary %}<p>{{ entry.data.summary }}</p>{% endif %}</article>
+{% endfor %}
+</div>

@@ -1,0 +1,61 @@
+# Bear’s Den
+
+A small, warm journal for Bear’s science, maps, plushy inhabitants, projects, and occasional memes. Built with Eleventy, Markdown, Nunjucks, and plain CSS. Dot can maintain and publish the site; a static host such as GitHub Pages serves it to visitors.
+
+## Run locally
+
+Use Node.js 22 or newer and pnpm 11.25.0.
+
+```sh
+pnpm install --frozen-lockfile
+pnpm dev
+```
+
+Open the local address printed by Eleventy. To produce and check the site:
+
+```sh
+pnpm build
+pnpm check
+```
+
+The production files are written to `dist/`. No Node.js server is needed to serve those files.
+
+In this Codex Windows workspace, Node is available but pnpm may not be on `PATH`. After the included dependencies are installed, the equivalent direct commands are `node scripts/dev.mjs`, `node scripts/build.mjs`, and `node scripts/check.mjs`. For a fresh install using Codex’s bundled pnpm:
+
+```powershell
+node "$env:USERPROFILE\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\pnpm\bin\pnpm.cjs" install --frozen-lockfile
+```
+
+## Add something to the den
+
+Copy an authoring template from `templates/` to the appropriate content folder. Give the file a short, lowercase, hyphenated name; that filename becomes its URL slug.
+
+| Template | Destination | Resulting URL |
+| --- | --- | --- |
+| `journal-post.md` or `meme.md` | `src/content/journal/` | `/journal/<filename>/` |
+| `map-entry.md` | `src/content/maps/` | `/projects/nice-maps-and-wiggling-lines/<filename>/` |
+| `plushy-profile.md` | `src/content/plushies/` | `/projects/home-plushy-demographic/<filename>/` |
+
+Replace the instructions in the copied template with your content. Every entry has a title, ISO date (`YYYY-MM-DD`), summary, kind, and draft flag. Optional `project` associates a journal entry with one of these project IDs:
+
+- `nice-maps-and-wiggling-lines`
+- `home-plushy-demographic`
+- `bear-5`
+
+Keep `draft: true` while writing. Drafts produce no page and appear in no listings, including during local preview. Set `draft: false` when you want to inspect the rendered entry locally, then review it before publishing the build. Templates stay outside `src/` and are never published.
+
+Put images and downloadable files in `src/assets/`. Reference them with site-root paths such as `/assets/maps/example.png`; the build applies the configured hosting prefix. Supply useful `imageAlt` text for every content image. For a map, include the source, units, and any important context in the article. Add plushy ID-card and pet-package links only after the real files are present.
+
+## Bear portrait
+
+The supplied bear portrait is stored at `src/assets/images/bear-avatar.png`. Its settings in `src/_data/site.json` use `avatar: "/assets/images/bear-avatar.png"` and `avatarTemporary: false`.
+
+To replace it later, save the new portrait under `src/assets/images/`, update `avatar` and the descriptive `avatarAlt`, and keep `avatarTemporary: false`. Rebuild and check the crop on desktop and mobile.
+
+## Hosting
+
+Give Dot `deliverables/bears-den-source.zip` for continued editing and publishing. [HANDOFF.md](HANDOFF.md) includes a ready-to-paste prompt and the GitHub Pages setup. A project site at `https://OWNER.github.io/REPOSITORY/` needs `SITE_PATH_PREFIX=/REPOSITORY/` when building; a user site at `https://OWNER.github.io/` uses `/`.
+
+Dot runs the build and manages updates with repository access. GitHub Pages hosts the resulting `dist/` files. No deployment is performed by this handoff.
+
+The first release contains three project introductions and an empty journal. Real map entries, plushy records, ID cards, Codex pet packages, and the Bear 5 robot are future work. There is no browser editor, account system, database, or runtime API.

@@ -1,0 +1,14 @@
+---
+layout: layouts/project.njk
+title: Nice Maps and Wiggling Lines
+projectId: nice-maps-and-wiggling-lines
+permalink: /projects/nice-maps-and-wiggling-lines/
+number: "01"
+label: THE VISUAL NOTEBOOK
+intro: Some patterns make you stop scrolling. Others make you stop working. This is a place to keep them.
+status: The collection is taking shape
+art: maps
+artNote: follow the interesting lines
+---
+<section class="project-story"><p class="eyebrow">THE IDEA</p><h2>A second look<br> at the world.</h2><div class="prose"><p>Maps and graphs have a way of making a complicated world feel a little more understandable—and sometimes a little more surprising.</p><p>This notebook will collect interesting maps and figures I come across during work and personal projects: coastlines, currents, time series, and whatever else catches my eye.</p><p>Each entry will leave room for the figure, its source, a little context, and the question that made it worth keeping.</p></div></section>
+<section class="collection-section"><div class="section-heading"><h2>The collection</h2><span class="hand-note">patterns worth a pause</span></div>{% if collections.maps.length %}{% set entries = collections.maps %}{% include "entry-list.njk" %}{% else %}<div class="collection-empty"><span class="collection-symbol" aria-hidden="true">∿</span><h3>The first map hasn’t landed yet.</h3><p>A shelf for interesting maps and wiggling lines.<br> Real figures and the stories behind them will arrive here.</p></div>{% endif %}</section>

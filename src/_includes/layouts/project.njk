@@ -1,0 +1,5 @@
+---
+layout: layouts/base.njk
+---
+{% from "art.njk" import projectArt %}
+<article class="project-page shell"><a class="back-link" href="/#projects">← All corners of the den</a><header class="project-page-header"><div><p class="eyebrow">PROJECT {{ number }} / {{ label }}</p><h1>{{ title }}</h1><p class="lead">{{ intro }}</p><span class="status-label"><span aria-hidden="true"></span>{{ status }}</span></div><div class="project-cover art-{{ art }}">{{ projectArt(art) }}<span class="hand-note">{{ artNote }}</span></div></header><div class="project-body">{{ content | safe }}</div>{% set updates = collections.journal | projectEntries(projectId) %}{% if updates.length %}<section class="project-updates"><p class="eyebrow">FROM THE JOURNAL</p><h2>Notes along the way</h2>{% set entries = updates %}{% include "entry-list.njk" %}</section>{% endif %}<nav class="project-next" aria-label="Explore another project"><span class="eyebrow">KEEP WANDERING</span>{% for item in projects %}{% if item.id != projectId %}<a href="{{ item.url }}">{{ item.title }} <span aria-hidden="true">↗</span></a>{% endif %}{% endfor %}</nav></article>

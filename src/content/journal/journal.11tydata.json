@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/entry.njk",
+  "kind": "post",
+  "permalink": "/journal/{{ page.fileSlug }}/"
+}

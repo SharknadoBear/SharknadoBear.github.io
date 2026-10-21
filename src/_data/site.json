@@ -1,0 +1,14 @@
+{
+  "title": "Bear’s Den",
+  "name": "Bear",
+  "description": "A personal journal of ocean science, curious projects, plushy inhabitants, and things that wiggle.",
+  "occupation": "Coastal oceanographer · Energy & environmental scientist · Applied physicist",
+  "introduction": "I’m Bear—a coastal oceanographer, energy and environmental scientist, and applied physicist. I study how energy, momentum, and materials move across scales, with a love of dynamics and practical applications.",
+  "denDescription": "This den collects the maps, experiments, plushy inhabitants, and unexpected ideas I pick up along the way.",
+  "avatar": "/assets/images/bear-avatar.png",
+  "avatarTemporary": false,
+  "avatarAlt": "Bear wearing black glasses and a tan Burberry check shirt",
+  "pnnlUrl": "https://www.pnnl.gov/people/yicheng-huang",
+  "linkedinUrl": "https://www.linkedin.com/in/yicheng-huang-a37a63213/",
+  "wifeUrl": "https://yeweihuang.github.io/"
+}
