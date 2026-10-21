@@ -54,8 +54,8 @@ To replace it later, save the new portrait under `src/assets/images/`, update `a
 
 ## Hosting
 
-Give Dot `deliverables/bears-den-source.zip` for continued editing and publishing. [HANDOFF.md](HANDOFF.md) includes a ready-to-paste prompt and the GitHub Pages setup. A project site at `https://OWNER.github.io/REPOSITORY/` needs `SITE_PATH_PREFIX=/REPOSITORY/` when building; a user site at `https://OWNER.github.io/` uses `/`.
+The live site is [Bear’s Den](https://sharknadobear.github.io/). Its authoritative source is [SharknadoBear/SharknadoBear.github.io](https://github.com/SharknadoBear/SharknadoBear.github.io), renamed from `bears-den` with its history preserved. Continue updates from this repository; the original `bears-den-source.zip` is the import archive.
 
-Dot runs the build and manages updates with repository access. GitHub Pages hosts the resulting `dist/` files. No deployment is performed by this handoff.
+Build with `SITE_PATH_PREFIX=/` for this root user site. The default build prefix is also `/`; clear any old `/bears-den/` setting in your shell. The workflow on `main` installs, checks, builds, and publishes the complete `dist/` output through GitHub Actions. See [DEPLOYMENT.md](DEPLOYMENT.md) for publishing and private draft handling, and [HANDOFF.md](HANDOFF.md) for authoring and review guidance.
 
 The first release contains three project introductions and an empty journal. Real map entries, plushy records, ID cards, Codex pet packages, and the Bear 5 robot are future work. There is no browser editor, account system, database, or runtime API.

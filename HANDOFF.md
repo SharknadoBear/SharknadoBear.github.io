@@ -1,22 +1,22 @@
 # Dot handoff
 
-Bear’s Den is a static personal site. Give Dot `deliverables/bears-den-source.zip` to continue working on it. Dot manages the source and publishing workflow; GitHub Pages serves the built site. This handoff does not create a repository or deploy anything.
+Bear’s Den is a static personal site at https://sharknadobear.github.io/. Continue work in the authoritative repository https://github.com/SharknadoBear/SharknadoBear.github.io, renamed from `bears-den` with its Git history preserved. The original `bears-den-source.zip` remains an import archive. GitHub Actions publishes the built site from `main`; see [DEPLOYMENT.md](DEPLOYMENT.md) for current publication settings and private draft handling.
 
 ## Give this to Dot
 
-Attach the source zip, then paste:
+For future updates, use this prompt:
 
 ```text
-Please take over Bear’s Den using the attached bears-den-source.zip. Read README.md and HANDOFF.md, preserve the existing design and content, and prepare it for GitHub Pages. Use Node.js 22 or newer and pnpm 11.25.0; run pnpm install --frozen-lockfile, pnpm check, and pnpm build.
+Please continue Bear’s Den in SharknadoBear/SharknadoBear.github.io. Read README.md, HANDOFF.md, and DEPLOYMENT.md, and preserve the existing design and content. Use Node.js 22 or newer and pnpm 11.25.0; run pnpm install --frozen-lockfile, pnpm check, and pnpm build.
 
-Use the GitHub account and repository I specify. If I have not specified them, ask for the target before making external changes. For a project URL https://OWNER.github.io/REPOSITORY/, set SITE_PATH_PREFIX=/REPOSITORY/ before building. For a user site https://OWNER.github.io/, use /. Review the site at its intended prefix and prepare a GitHub Actions workflow that builds Eleventy and publishes the complete dist/ output. The supplied bear portrait is src/assets/images/bear-avatar.png, with avatarTemporary:false.
+The confirmed repository is SharknadoBear/SharknadoBear.github.io, and the live URL is https://sharknadobear.github.io/. Build with SITE_PATH_PREFIX=/ and review at the root path. Use the committed GitHub Actions workflow to build Eleventy and publish the complete dist/ output. The supplied bear portrait is src/assets/images/bear-avatar.png, with avatarTemporary:false.
 
 Prepare and validate first; do not deploy publicly until I ask you to publish. When publication is authorized, deploy the entire new dist/ artifact so removed pages do not remain online, verify the five initial pages and their links, and give me the public URL and repository link. Continue managing content from Markdown and rebuild for each update. GitHub Pages will serve the static site; no running Node.js server is needed.
 ```
 
 ## GitHub Pages setup
 
-Choose the destination before building:
+The current deployment is the root user site: repository `SharknadoBear.github.io`, URL `https://sharknadobear.github.io/`, and build prefix `/`. The table and subdirectory commands below are reference examples for a future hosting change:
 
 | Site | Repository | Build prefix |
 | --- | --- | --- |
@@ -88,4 +88,4 @@ The introduction uses only Bear’s supplied biography. The avatar uses the newl
 
 Bear 5 describes a planned Raspberry Pi 5 conversation phase followed by sensing; Gemma 4 is a candidate for later evaluation, not a claim of implemented or verified hardware compatibility.
 
-There are no hosting credentials, public deployment, automated messages to Dot, real pet packages, ID cards, or robot software included in this release.
+The source contains no hosting credentials, automated messages to Dot, real pet packages, ID cards, or robot software. The committed GitHub Actions workflow manages the public deployment described in DEPLOYMENT.md.
