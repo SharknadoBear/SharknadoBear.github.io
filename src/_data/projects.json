@@ -2,9 +2,9 @@
   {
     "id": "nice-maps-and-wiggling-lines",
     "number": "01",
-    "title": "Nice Maps and Wiggling Lines",
+    "title": "Another wandering day",
     "label": "The visual notebook",
-    "description": "Maps worth keeping. Graphs worth a second look. A collection of patterns from work and everything in between.",
+    "description": "Working Bear usually gets lost in maps and wiggling lines. He might choose to share some pretty ones.",
     "note": "a little order in the wiggles",
     "url": "/projects/nice-maps-and-wiggling-lines/",
     "art": "maps"
@@ -12,9 +12,9 @@
   {
     "id": "home-plushy-demographic",
     "number": "02",
-    "title": "Home Plushy Demographic",
+    "title": "Family member demographic",
     "label": "The household census",
-    "description": "Getting to know the softest members of the household. Every resident has a story, and soon, an ID of their own.",
+    "description": "Bear’s household is crowded with tenants. They take Bear’s food, drinks, and clothes, so they need to get IDed.",
     "note": "all residents warmly welcomed",
     "url": "/projects/home-plushy-demographic/",
     "art": "plushies"
@@ -24,7 +24,7 @@
     "number": "03",
     "title": "Bear 5",
     "label": "The very soft robotics lab",
-    "description": "One Costco plush bear, a Raspberry Pi 5, and a question: what if this bear could talk back?",
+    "description": "Bear 5’s brain needs an upgrade. As our most important family member, he should talk like a real bear.",
     "note": "small steps, very large bear",
     "url": "/projects/bear-5/",
     "art": "robot"

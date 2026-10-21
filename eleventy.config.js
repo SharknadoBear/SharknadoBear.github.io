@@ -2,6 +2,7 @@ import { HtmlBasePlugin } from "@11ty/eleventy";
 import { statSync } from "node:fs";
 import { lstat, readdir, unlink } from "node:fs/promises";
 import path from "node:path";
+import { verifyWardrobe } from "./scripts/verify-wardrobe.mjs";
 
 function hostingPrefix(value = "/") {
   const prefix = value.trim();
@@ -103,10 +104,12 @@ export default function (eleventyConfig) {
   // License/readme Markdown in assets is copied verbatim, never rendered as pages.
   eleventyConfig.ignores.add(`${input.replaceAll("\\", "/")}/assets/**`);
 
-  eleventyConfig.on("eleventy.before", ({ incremental }) => {
+  eleventyConfig.on("eleventy.before", async ({ incremental }) => {
     if (incremental) {
       throw new Error("Incremental builds are unsupported: use a full build so newly drafted pages leave the preview.");
     }
+    // Verify the exact input tree, including isolated checks and live rebuilds.
+    await verifyWardrobe({ inputRoot: input });
   });
   // Eleventy otherwise leaves pages on disk when their source is removed or
   // made a draft. The complete successful result list also cleans preview.

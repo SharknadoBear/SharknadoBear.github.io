@@ -21,3 +21,7 @@ For each requested update, edit a working copy, preview at `/`, and run `pnpm ch
 After pushing, confirm the remote `main` commit equals the intended local commit and that its exact Actions run succeeds. Verify the live page URLs, navigation, images, downloads, and affected layouts on desktop and mobile. Changing a published entry to a draft requires a full deployment to remove its former page; inspect whether its assets should also be removed.
 
 The initial release contains five pages: home, journal, and the three project introductions. The journal contains no posts. No scheduled task or background content publishing is configured.
+
+## Daily wardrobe publication
+
+The complete paired portrait manifest and all 144 reviewed WebP files must ship together. Every build verifies file existence, dimensions, byte sizes, and SHA-256 hashes; pnpm check also runs the calendar and fallback tests. Verify all 144 live files against the manifest after deployment. In a browser, check ordinary and special dates, Seattle midnight, no layout shift, a failed image request, and JavaScript-disabled fallback. The original portrait stays available. Do not copy private import archives, image-generation records, garment references, or master backups into the public repository.

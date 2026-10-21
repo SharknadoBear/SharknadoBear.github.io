@@ -80,12 +80,16 @@ Draft pages are excluded from output and listings, including local preview. Set 
 - Inspect the supplied portrait at `src/assets/images/bear-avatar.png` and its desktop/mobile crop. Confirm `avatarTemporary: false` and descriptive alternative text in `src/_data/site.json`.
 - Verify the homepage, all three project pages, and the journal on desktop and mobile. The first release should show exactly three projects and no invented posts or plushy records.
 - Follow navigation and article links, inspect every image, and tab through interactive elements. Reading and navigation should work with JavaScript disabled.
-- Check Bear’s PNNL and LinkedIn profile links, and confirm that [Yewei’s corner](https://yeweihuang.github.io/) points to `https://yeweihuang.github.io/`.
+- Check the footer’s Working profile and LinkedIn links, and confirm that Bear wife’s site points to https://yeweihuang.github.io/.
 - Review the build using the intended hosting prefix. Confirm that its styles, images, and internal links resolve under that prefix.
 - Include only real, reviewed downloadable files. Adding `idCard` or `petPackage` to a plushy profile creates an expectation that a usable file exists at that path.
 
-The introduction uses only Bear’s supplied biography. The avatar uses the newly supplied bear portrait; the `avatarTemporary: false` setting identifies it as the selected portrait rather than the earlier stand-in.
+Bear requested removal of the homepage biography section; do not restore it while making unrelated updates. The original supplied portrait remains the initial image and fallback, with avatarTemporary:false retained. The daily wardrobe changes only the photo and alternative text inside the existing frame; see README.md for its calendar, paired manifest, and asset maintenance rules.
 
 Bear 5 describes a planned Raspberry Pi 5 conversation phase followed by sensing; Gemma 4 is a candidate for later evaluation, not a claim of implemented or verified hardware compatibility.
 
 The source contains no hosting credentials, automated messages to Dot, real pet packages, ID cards, or robot software. The committed GitHub Actions workflow manages the public deployment described in DEPLOYMENT.md.
+
+## Wardrobe release checks
+
+Run pnpm test:wardrobe as well as the site checks. Verify ordinary weekdays, weekends, actual and observed federal holidays, January 16, Seattle midnight and daylight-saving transitions, same-day refresh stability, and failed-image fallback. Confirm that all 144 hash-bound portraits are deployed, while the browser requests only its selected daily portrait. Keep the 72-item order and epoch unchanged. Do not publish original ZIPs, garment references, generation prompts, or private review files.

@@ -9,7 +9,9 @@
   "scripts": {
     "dev": "node scripts/dev.mjs",
     "build": "node scripts/build.mjs",
-    "check": "node scripts/check.mjs"
+    "check": "node --test tests/wardrobe.test.mjs && node scripts/check.mjs",
+    "test:wardrobe": "node --test tests/wardrobe.test.mjs",
+    "verify:wardrobe": "node scripts/verify-wardrobe.mjs"
   },
   "devDependencies": { "@11ty/eleventy": "3.1.7" }
 }

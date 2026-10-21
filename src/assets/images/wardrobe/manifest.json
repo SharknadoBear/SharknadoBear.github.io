@@ -1,0 +1,1456 @@
+{
+  "schemaVersion": 1,
+  "enabled": true,
+  "timeZone": "America/Los_Angeles",
+  "epoch": "2026-01-01",
+  "poolSize": 72,
+  "ordinary": [
+    {
+      "id": "81302391",
+      "src": "/assets/images/wardrobe/81302391-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in finch brown, with clear glasses.",
+      "reviewed": true,
+      "sha256": "961ddfecc2b1e80312bdac9525ad8914fbef04199a2dee531ff52f466ae018be",
+      "bytes": 274278,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81302381",
+      "src": "/assets/images/wardrobe/81302381-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in sand beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "ee0fce80ec4c3c0fddc8e9656430cc0b765b6538c000ea9bfc0820c3ff384984",
+      "bytes": 303736,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81302431",
+      "src": "/assets/images/wardrobe/81302431-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in sand beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "70f2b37327e54be34a0fdd262f9213ee61145868ef228c326050ca2c12e1a89b",
+      "bytes": 279578,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81294601",
+      "src": "/assets/images/wardrobe/81294601-normal.webp",
+      "alt": "Bear wearing Burberry’s check cotton linen overshirt in sand beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "3b7898300a887a0bb7269656b05d8a688796d5850bb87bce3dc6176246cae072",
+      "bytes": 302492,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80714651",
+      "src": "/assets/images/wardrobe/80714651-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit stretch cotton shirt in white, with clear glasses.",
+      "reviewed": true,
+      "sha256": "fb93ed4bb71e394eabba4555015ee4c0879c9d2b678d149b7b0fa62d599c0d86",
+      "bytes": 208304,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80718001",
+      "src": "/assets/images/wardrobe/80718001-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit stretch cotton shirt in navy, with clear glasses.",
+      "reviewed": true,
+      "sha256": "d4e089f6dd4ea36b952620438936a35dd72c8749d743994ce210fb68fcee0b81",
+      "bytes": 213292,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80714451",
+      "src": "/assets/images/wardrobe/80714451-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit check cotton shirt in archive beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "47cbee841c5009d6fe0491916bdadd009e1b7b433189d7953ef58f31eba408e0",
+      "bytes": 287708,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80732161",
+      "src": "/assets/images/wardrobe/80732161-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit check cotton shirt in navy, with clear glasses.",
+      "reviewed": true,
+      "sha256": "e1666ca8b6393051a55037e0e56f5f5564028b7a3145ed742658209571354230",
+      "bytes": 260594,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81330751",
+      "src": "/assets/images/wardrobe/81330751-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in dove grey, with clear glasses.",
+      "reviewed": true,
+      "sha256": "81d07d590569da7df52c1353740dae65bac034d6793c9f8d93deaa310f58c649",
+      "bytes": 274542,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81330761",
+      "src": "/assets/images/wardrobe/81330761-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in sepia brown, with clear glasses.",
+      "reviewed": true,
+      "sha256": "c2133b92c8d676892e6acff2f993e6008fae89c343f2e3b089634564fee68a48",
+      "bytes": 273930,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81277471",
+      "src": "/assets/images/wardrobe/81277471-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton shirt in vineyard red, with clear glasses.",
+      "reviewed": true,
+      "sha256": "f0f84e284a575476fec4206875cf09b55407f08b42d8ea386a1f18c8e5d34f9e",
+      "bytes": 254670,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81336181",
+      "src": "/assets/images/wardrobe/81336181-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton shirt in sepia brown, with clear glasses.",
+      "reviewed": true,
+      "sha256": "679bb58a709c7fad3466c254cf47bf0503fb3e62ae20445651c6735b34c87f57",
+      "bytes": 251530,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81272511",
+      "src": "/assets/images/wardrobe/81272511-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit striped cotton shirt in sunbleached blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "6703fccb702fe9f771d70dfa40404e68617d90badac04c01efde29a41ae8a9af",
+      "bytes": 237684,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81277491",
+      "src": "/assets/images/wardrobe/81277491-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit striped cotton shirt in classic blue/white, with clear glasses.",
+      "reviewed": true,
+      "sha256": "a26fd26084eeb7b5367a37cf21aa32ac4ec08f4dbeea9c4553b73eb95c16d738",
+      "bytes": 273466,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81272741",
+      "src": "/assets/images/wardrobe/81272741-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit check piping cotton poplin shirt in optic white, with clear glasses.",
+      "reviewed": true,
+      "sha256": "1290d9a9728ff7b9745d8cea0e8eaed60ec94c775c826d93b322b3bbeb06f866",
+      "bytes": 204512,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81272751",
+      "src": "/assets/images/wardrobe/81272751-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit check piping cotton poplin shirt in black, with clear glasses.",
+      "reviewed": true,
+      "sha256": "cfea34be855c36596b3e9fd760d818f95d67aae67769f9da1b8ee7328a0dd453",
+      "bytes": 221846,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80795951",
+      "src": "/assets/images/wardrobe/80795951-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit stretch cotton shirt in navy, with clear glasses.",
+      "reviewed": true,
+      "sha256": "6c89d35fef5f2d248d172a3af87dc2ff968fc60eddf7d414edca3b1dd0618048",
+      "bytes": 222064,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80795941",
+      "src": "/assets/images/wardrobe/80795941-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit stretch cotton shirt in white, with clear glasses.",
+      "reviewed": true,
+      "sha256": "5f576a94ac2c193e82e25d4548f2ab0213e11cf108ee60b76f9773fca80e0398",
+      "bytes": 205870,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80795921",
+      "src": "/assets/images/wardrobe/80795921-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit check cotton shirt in navy, with clear glasses.",
+      "reviewed": true,
+      "sha256": "5565d91ad91ff00105e0d7f12ae9f165f37a50a908c4d827f20920c3491ba9f6",
+      "bytes": 261832,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80795911",
+      "src": "/assets/images/wardrobe/80795911-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit check cotton shirt in archive beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "2480d5139f0a17000a7c7c47c3182b4160e7f4ed572e6c0e44976aa6633aaee6",
+      "bytes": 275376,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80795961",
+      "src": "/assets/images/wardrobe/80795961-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit stretch cotton shirt in black, with clear glasses.",
+      "reviewed": true,
+      "sha256": "6cb2117085f487aefaaf610923bafc7ba73554ccd773813efd9b95e2a6a13ac0",
+      "bytes": 208860,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80717991",
+      "src": "/assets/images/wardrobe/80717991-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit stretch cotton shirt in black, with clear glasses.",
+      "reviewed": true,
+      "sha256": "9cb9c0ead1af8fbf986e11e83220e7568ed577ead7f79e5dcd590b52d0cabf9d",
+      "bytes": 220448,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81236781",
+      "src": "/assets/images/wardrobe/81236781-normal.webp",
+      "alt": "Bear wearing Burberry’s striped cotton poplin shirt in marble grey/white, with clear glasses.",
+      "reviewed": true,
+      "sha256": "25d08b1dacc26aa6e3af4625c6cd55bc35c7930eb51f9e8e2812f5d90e0d2cc7",
+      "bytes": 222750,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81294561",
+      "src": "/assets/images/wardrobe/81294561-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit striped cotton shirt in blue/white, with clear glasses.",
+      "reviewed": true,
+      "sha256": "f10c18b4642e75d2ab91ac66da348129d340a340ab87e6ec0cc659023bbbe7be",
+      "bytes": 243764,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80876371",
+      "src": "/assets/images/wardrobe/80876371-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton poplin shirt in sand beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "e605a2644156a7d8a47eb014dc1815fdb1d9336cfbd70c140f81e4922148b44a",
+      "bytes": 250582,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81220071",
+      "src": "/assets/images/wardrobe/81220071-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in optic white, with clear glasses.",
+      "reviewed": true,
+      "sha256": "e28719e372a6748b54707be778d8c673552233f353a3f8f3f8144b630a724d41",
+      "bytes": 209434,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81244511",
+      "src": "/assets/images/wardrobe/81244511-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in cornflower blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "a26648f299f2df1e2f74626de6bf0522068be9078e3828dbcf4602649dbde8af",
+      "bytes": 227482,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81220061",
+      "src": "/assets/images/wardrobe/81220061-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in dark graphite blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "ff1d21d3600c139dcd67625420fcc17032cbf8356bd72849aa8874be48ccb5a4",
+      "bytes": 222260,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80705771",
+      "src": "/assets/images/wardrobe/80705771-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton shirt in archive beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "f4ef8bd132f0420b35c40ca20e3b4ac280ae8698e9e009cea53f4bbc0bfec9bc",
+      "bytes": 286694,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81237491",
+      "src": "/assets/images/wardrobe/81237491-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in black, with clear glasses.",
+      "reviewed": true,
+      "sha256": "04a44860bee4d0703b54ad62a5532c355a895c1662cdfc5f0ab0f1fafdf046eb",
+      "bytes": 223912,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80876341",
+      "src": "/assets/images/wardrobe/80876341-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton poplin shirt in sand beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "57e25ee2ecbf8890234d1bfaac0f3d2f1d764a38287fda765050d05f2dc8d549",
+      "bytes": 265564,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80912021",
+      "src": "/assets/images/wardrobe/80912021-normal.webp",
+      "alt": "Bear wearing Burberry’s oversized check silk shirt in sand beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "0b2eb8f543da9b0d2b6b3945f6b20e9b4b591e7f8d0967c17c4b6f2fcbc03aed",
+      "bytes": 263880,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81219961",
+      "src": "/assets/images/wardrobe/81219961-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton oxford shirt in white, with clear glasses.",
+      "reviewed": true,
+      "sha256": "b448543d3d7393a0d7a5e8a312cd141561a786dfbd3861565da6ead170266cf3",
+      "bytes": 220630,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81231661",
+      "src": "/assets/images/wardrobe/81231661-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton poplin shirt in sand beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "58349ae272e9286021dd890e0f1215543c97db95d528617890320512bc590359",
+      "bytes": 268196,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81219971",
+      "src": "/assets/images/wardrobe/81219971-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton oxford shirt in blue smoke, with clear glasses.",
+      "reviewed": true,
+      "sha256": "b455a444205962e5bff601f4ea17e86100542b53d2ec3664aaa478fbbe4207fd",
+      "bytes": 278906,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80919251",
+      "src": "/assets/images/wardrobe/80919251-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton shirt in black, with clear glasses.",
+      "reviewed": true,
+      "sha256": "2d30e08745a90d722fab4b1e4b21e6d079f403d1002076f2f65215e08310bf95",
+      "bytes": 204440,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81302441",
+      "src": "/assets/images/wardrobe/81302441-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in finch brown, with clear glasses.",
+      "reviewed": true,
+      "sha256": "e4700237ca762911da789d93a6d6ceb9b337f16feb4d95aecc743a02a6eb2fb6",
+      "bytes": 291076,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81378411",
+      "src": "/assets/images/wardrobe/81378411-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in nickel grey, with clear glasses.",
+      "reviewed": true,
+      "sha256": "1d9a44bea0c86f203a13a3721b82de7fe276e971649ec1d2d89953a9ad7101ce",
+      "bytes": 225668,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81272531",
+      "src": "/assets/images/wardrobe/81272531-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit striped cotton shirt in vineyard red, with clear glasses.",
+      "reviewed": true,
+      "sha256": "9d9227f1d0b14fce19588e862c59a29a37c8bca999c51dad9aa15050c1d2162c",
+      "bytes": 267992,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81279871",
+      "src": "/assets/images/wardrobe/81279871-normal.webp",
+      "alt": "Bear wearing Burberry’s cotton overshirt in black, with clear glasses.",
+      "reviewed": true,
+      "sha256": "345a24e3890d4a0a667acc440f9f465837ed39a038edc115c8d41d065d698311",
+      "bytes": 229684,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81236841",
+      "src": "/assets/images/wardrobe/81236841-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check linen shirt in sand beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "4377a40b13902094a726aaaf00f97874fb7ee086babae3ff1cab0ab18c484065",
+      "bytes": 263398,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81278841",
+      "src": "/assets/images/wardrobe/81278841-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit tropical gabardine shirt in seafarer blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "34b5f4de077a1030ba711eb30988000b0464a041c6b031829deea7513030db26",
+      "bytes": 248000,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81326721",
+      "src": "/assets/images/wardrobe/81326721-normal.webp",
+      "alt": "Bear wearing Burberry’s check wool flannel overshirt in dove grey, with clear glasses.",
+      "reviewed": true,
+      "sha256": "dd07d666be7dcd4468bc0dd3a44771097d898206c79094b7e17f7069dcca345c",
+      "bytes": 286734,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81330771",
+      "src": "/assets/images/wardrobe/81330771-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in marsh green, with clear glasses.",
+      "reviewed": true,
+      "sha256": "5ab6ea686c71e77f9678aa4ccf473fff9bd61fb3651437f7f9c3bf354abdad0a",
+      "bytes": 257750,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81208111",
+      "src": "/assets/images/wardrobe/81208111-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton voile shirt in black, with clear glasses.",
+      "reviewed": true,
+      "sha256": "fbc9d4a49c7e18894ec9c29ed0fb89f2c135ea5aef1b96a43bbc7d8a86b351f4",
+      "bytes": 244320,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81332131",
+      "src": "/assets/images/wardrobe/81332131-normal.webp",
+      "alt": "Bear wearing Burberry’s check wool flannel overshirt in teal blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "f331d510993887d4cc4c5ec0a2e0d5e4d79d9d3a917fdf46d9b28756f0f942f7",
+      "bytes": 276200,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81326581",
+      "src": "/assets/images/wardrobe/81326581-normal.webp",
+      "alt": "Bear wearing Burberry’s check corduroy overshirt in white/dark blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "ce04c3f2e4f2d5fe4fd4816475b0b153ed5c2423871cbc0950ef114e25397e2e",
+      "bytes": 312354,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81236701",
+      "src": "/assets/images/wardrobe/81236701-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton shirt in wave blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "6e8700c1769971aff2b440bd57202314afc18e1efa16f016d3730e37f9b2427a",
+      "bytes": 240530,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81301761",
+      "src": "/assets/images/wardrobe/81301761-normal.webp",
+      "alt": "Bear wearing Burberry’s check cotton linen overshirt in peacock blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "4079586f5508bf24bd94d69a4f7d9e9a54d65a8550a23cfbebb02d75ef01de1c",
+      "bytes": 292882,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81236741",
+      "src": "/assets/images/wardrobe/81236741-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton shirt in cornflower blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "7c4e390290643673dba6afbcaaf8b64448769bc243fce2786d5a90865c0fde13",
+      "bytes": 257072,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81322091",
+      "src": "/assets/images/wardrobe/81322091-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in sand beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "f898dbf723869a161070bd2fbeff99a7eb52fe1b860d25f2cef740b21b3ea11f",
+      "bytes": 289320,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81265161",
+      "src": "/assets/images/wardrobe/81265161-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton shirt in oatmeal beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "82577114f158841f1a469e574aca4d830f289b6a9e5e771345a953d334f5184c",
+      "bytes": 226422,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81335271",
+      "src": "/assets/images/wardrobe/81335271-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit gingham cotton shirt in pale mauve grey, with clear glasses.",
+      "reviewed": true,
+      "sha256": "75d847425e2057a8bd5ccd1a79d7c41735a36a66e29d6d0c09f8b047d62a47dc",
+      "bytes": 260276,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81162481",
+      "src": "/assets/images/wardrobe/81162481-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton tuxedo shirt in white, with clear glasses.",
+      "reviewed": true,
+      "sha256": "7c2d8fe7de03223972d563d4786b55d789412fb185b7f6ea320e94eee1ae4fea",
+      "bytes": 228564,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81237171",
+      "src": "/assets/images/wardrobe/81237171-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check embroidered cotton shirt in sparrow beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "f556ada4d00dcd81dc8c0cf41c723ebb191ccdf03da94789320d2ea76d68d156",
+      "bytes": 241486,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81326711",
+      "src": "/assets/images/wardrobe/81326711-normal.webp",
+      "alt": "Bear wearing Burberry’s check wool flannel overshirt in sepia brown, with clear glasses.",
+      "reviewed": true,
+      "sha256": "84757c6861755d0172643f2825c16bc2980ee9a3013d44ecb50331e29a81f90d",
+      "bytes": 274880,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81335281",
+      "src": "/assets/images/wardrobe/81335281-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit gingham cotton shirt in cool cornflower blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "7d91d44e22939eb0f6efd6640088f1ad04acca9b61dff449073f98823c074487",
+      "bytes": 264698,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81011731",
+      "src": "/assets/images/wardrobe/81011731-normal.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton poplin formal shirt in neptune blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "915bdfda1ef57cda145691ed13bf734a93740ca3cfb5859b8b1b7913b415741c",
+      "bytes": 216936,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81238101",
+      "src": "/assets/images/wardrobe/81238101-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton blend shirt in bright navy, with clear glasses.",
+      "reviewed": true,
+      "sha256": "a307dbdcc9a3caed60e9a363a6b148fbea673cb17063b6d33d6200e8afdee4c0",
+      "bytes": 278640,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81263041",
+      "src": "/assets/images/wardrobe/81263041-normal.webp",
+      "alt": "Bear wearing Burberry’s nylon zip overshirt in sparrow beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "a0a3e31e2332b75475901b088dd806944733c3169e44938186e5e97a24f26730",
+      "bytes": 217460,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81277361",
+      "src": "/assets/images/wardrobe/81277361-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit feather print cotton shirt in ink blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "59eae828927f1864770664457032e4548974523ab230d4b4e7cdbcfd1a96eb9d",
+      "bytes": 260254,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81277351",
+      "src": "/assets/images/wardrobe/81277351-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit knot check cotton shirt in maritime blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "b83c7f4ffadc309f97d8af981e6b2e17b938a3aedb85125359d2bb677d1692c1",
+      "bytes": 282596,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81280771",
+      "src": "/assets/images/wardrobe/81280771-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit knight heart cotton shirt in black, with clear glasses.",
+      "reviewed": true,
+      "sha256": "4d22db4e67255e1f2d3ebaf3dd5ef3e861c0325acaa4eee95c6bda744a76494a",
+      "bytes": 221840,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81330701",
+      "src": "/assets/images/wardrobe/81330701-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in optic white, with clear glasses.",
+      "reviewed": true,
+      "sha256": "cfae7b0e87ab0ee8b3a772ee94153b71c0391dfe44f89245124bd3eea99b70b4",
+      "bytes": 211214,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81277531",
+      "src": "/assets/images/wardrobe/81277531-normal.webp",
+      "alt": "Bear wearing Burberry’s coated nylon overshirt in finch brown, with clear glasses.",
+      "reviewed": true,
+      "sha256": "372143571a36ad8b95f3df6d3fb3ca8f501fffd92646d357d6134527727630eb",
+      "bytes": 222274,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81347921",
+      "src": "/assets/images/wardrobe/81347921-normal.webp",
+      "alt": "Bear wearing Burberry’s wool cashmere overshirt in lead grey melange, with clear glasses.",
+      "reviewed": true,
+      "sha256": "c7d8bc74f31649cb8e419624b2527c4cc1edd114ca7ca0290d3c0b0ce72dfa1f",
+      "bytes": 271626,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81337701",
+      "src": "/assets/images/wardrobe/81337701-normal.webp",
+      "alt": "Bear wearing Burberry’s corduroy overshirt in chocolate brown, with clear glasses.",
+      "reviewed": true,
+      "sha256": "20295e8a5e33cb74c7214ac5291aa7571ecdd80701d19a6c643ef0c9cc01535c",
+      "bytes": 264338,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "85000961",
+      "src": "/assets/images/wardrobe/85000961-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit striped cotton shirt in sky blue, with clear glasses.",
+      "reviewed": true,
+      "sha256": "b1ae0a68fa248b0521524cf6f194e7fd766bf2e30dadcb257b09c532c5078aa1",
+      "bytes": 238190,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81278791",
+      "src": "/assets/images/wardrobe/81278791-normal.webp",
+      "alt": "Bear wearing Burberry’s tropical gabardine and check shirt in finch brown, with clear glasses.",
+      "reviewed": true,
+      "sha256": "e5be052cf07820e37ba9761dabc0da320acbd5860222b4882204a6cc17f2ee23",
+      "bytes": 240752,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81353601",
+      "src": "/assets/images/wardrobe/81353601-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit silk shirt in clam beige, with clear glasses.",
+      "reviewed": true,
+      "sha256": "5d4aa35f8063dcf0ce4fbb539e94f069042cc8b13725f0dd1a907b35e71dda26",
+      "bytes": 217002,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81330691",
+      "src": "/assets/images/wardrobe/81330691-normal.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in black, with clear glasses.",
+      "reviewed": true,
+      "sha256": "6fecc31199a2db6ef025e7cdd65abb1b643edb6457e3bd83789ce9fcd00f87f6",
+      "bytes": 216668,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81348371",
+      "src": "/assets/images/wardrobe/81348371-normal.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit silk shirt in begonia pink, with clear glasses.",
+      "reviewed": true,
+      "sha256": "4425913e2febd0b34b65ddb4a1c764de1dc12d961cad1231c12ef37ab2e3394b",
+      "bytes": 216960,
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "special": [
+    {
+      "id": "81302391",
+      "src": "/assets/images/wardrobe/81302391-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in finch brown, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "272652b62f433f8b3da6e5fe1634ac32f8b516eb92439ebb75c67bb0b532566e",
+      "bytes": 277228,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81302381",
+      "src": "/assets/images/wardrobe/81302381-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in sand beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "1c12806765325fc534f7cf0d7b5fbec308aa0560d5bdcd449390241fcbf5f583",
+      "bytes": 268564,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81302431",
+      "src": "/assets/images/wardrobe/81302431-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in sand beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "559b79c7bb9845109332889627c86b261246d7fe2bc4d184dfe523fe3e00df74",
+      "bytes": 256230,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81294601",
+      "src": "/assets/images/wardrobe/81294601-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s check cotton linen overshirt in sand beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "7f895d9bdd574cb949fc139fb5e544c299303f3b63828e4df3291ae8626d2e65",
+      "bytes": 269058,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80714651",
+      "src": "/assets/images/wardrobe/80714651-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit stretch cotton shirt in white, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "e429e70fd6ea3591bf0ddcc2bcef4bf97f1641bad6fe8009725dd6b6b959dcdc",
+      "bytes": 195078,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80718001",
+      "src": "/assets/images/wardrobe/80718001-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit stretch cotton shirt in navy, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "0bd2a12482a3a75cb4c89fd2ccfc00a0891e2cc75d4e4b0c8eb8c97cc0df31b5",
+      "bytes": 236810,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80714451",
+      "src": "/assets/images/wardrobe/80714451-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit check cotton shirt in archive beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "fc130831951c11ee0f934ab0036af9d03edaa5c35fa439c6f3345d298e855347",
+      "bytes": 265664,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80732161",
+      "src": "/assets/images/wardrobe/80732161-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit check cotton shirt in navy, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "0890f8bc7ce1e5051841f2b7b6bc7b9c3c5c960b6ff0d53e5d946f4e599f2dc3",
+      "bytes": 242712,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81330751",
+      "src": "/assets/images/wardrobe/81330751-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in dove grey, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "6d02929ec33d5608810e2422d6cbb6a7712c35dfeaae4116ddfd2953032c28e8",
+      "bytes": 267420,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81330761",
+      "src": "/assets/images/wardrobe/81330761-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in sepia brown, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "bd8a7f16710e0d12863d741144407a9589a5d27aca680389d2e553979a6c8cb9",
+      "bytes": 261948,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81277471",
+      "src": "/assets/images/wardrobe/81277471-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton shirt in vineyard red, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "9d8f6dc1429ead0fcf6b25b8108f206e1d55cc6650f1a51ff16f6d159e4e877d",
+      "bytes": 276594,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81336181",
+      "src": "/assets/images/wardrobe/81336181-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton shirt in sepia brown, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "70fdda74ca9a63d99a2d120988baa149d91fab23eb68476a2fd7dc962056f9a8",
+      "bytes": 285696,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81272511",
+      "src": "/assets/images/wardrobe/81272511-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit striped cotton shirt in sunbleached blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "67088ace19a05d328a84be9bfd442bd98c92c1e42d195d38cb1e481a69ec297e",
+      "bytes": 226720,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81277491",
+      "src": "/assets/images/wardrobe/81277491-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit striped cotton shirt in classic blue/white, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "1146a7149988e8f8362b148bff53976b2e518739baba2681a624b598541a4231",
+      "bytes": 282520,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81272741",
+      "src": "/assets/images/wardrobe/81272741-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit check piping cotton poplin shirt in optic white, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "94009a7b074a2836688bcdf3c7b3404cae4bc7f257bd4764b384569c4f5565ee",
+      "bytes": 197588,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81272751",
+      "src": "/assets/images/wardrobe/81272751-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit check piping cotton poplin shirt in black, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "0ad7d7a2d457b752a0f9a44c066f6a8eb8680788144e7759b2f69b8d8ac0512f",
+      "bytes": 226606,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80795951",
+      "src": "/assets/images/wardrobe/80795951-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit stretch cotton shirt in navy, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "59228517d17d54b87db5fb70a90e9c6f371d337fb6d83a9a502a1d8b5f24d5e2",
+      "bytes": 238094,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80795941",
+      "src": "/assets/images/wardrobe/80795941-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit stretch cotton shirt in white, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "c7dc213613a4aab772cc70b5b337e62747160c14da4714b6abdb8212c995afb9",
+      "bytes": 205062,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80795921",
+      "src": "/assets/images/wardrobe/80795921-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit check cotton shirt in navy, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "1eea0d6f85254c3a09a79dc370aafaa49e04adb17a60f6f9e3f8750f9b7a31ac",
+      "bytes": 243778,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80795911",
+      "src": "/assets/images/wardrobe/80795911-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit check cotton shirt in archive beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "e51da2c5636a340955d986b12c6660ad503f4556d08b3d12192acc5c0abc9d29",
+      "bytes": 252788,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80795961",
+      "src": "/assets/images/wardrobe/80795961-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit stretch cotton shirt in black, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "fdafc6653d37c7f2649cfa9aa7f91b9342935bfc3d5ce83fde583585f70048f4",
+      "bytes": 223766,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80717991",
+      "src": "/assets/images/wardrobe/80717991-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit stretch cotton shirt in black, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "c928b7bfa00df4548027c534c49267e66cebc63e16b0172446d7c5daebe97c7d",
+      "bytes": 210412,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81236781",
+      "src": "/assets/images/wardrobe/81236781-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s striped cotton poplin shirt in marble grey/white, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "1d63b4798d399f4b6e73cb7295681a386b27f724298492cf764e48b6b3679f73",
+      "bytes": 228998,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81294561",
+      "src": "/assets/images/wardrobe/81294561-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit striped cotton shirt in blue/white, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "d74fbe689845baabb80a968957031e1e0d270daf5d122c8a64c02b1c1f1fdc15",
+      "bytes": 243096,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80876371",
+      "src": "/assets/images/wardrobe/80876371-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton poplin shirt in sand beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "0cdc83f14a134a4335970699e0451619e61f38b8c6b1a5b5deee510fa8d5c3fb",
+      "bytes": 266018,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81220071",
+      "src": "/assets/images/wardrobe/81220071-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in optic white, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "683317e027b973f379935166cedbd4c3f6a0cdd621b1124e7306dc01acab60c0",
+      "bytes": 208252,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81244511",
+      "src": "/assets/images/wardrobe/81244511-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in cornflower blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "502af8ee37892063f0b4eb6784b7cfaeecc9dbd938243a495d2f6d9b4528db54",
+      "bytes": 214410,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81220061",
+      "src": "/assets/images/wardrobe/81220061-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in dark graphite blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "fccf2fc897e8037d89dd446f5e2e7a84cd941937560507525b580016935b16d4",
+      "bytes": 229852,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80705771",
+      "src": "/assets/images/wardrobe/80705771-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton shirt in archive beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "6be43cb65ea0988d3314c6055e3e348cf827b99ec0f8a68aede3fc4ae13b7071",
+      "bytes": 257578,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81237491",
+      "src": "/assets/images/wardrobe/81237491-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in black, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "53916dc9435f5fb095758ff3e035b9b9fd99cc8ab54d748240cd36a190edf525",
+      "bytes": 203824,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80876341",
+      "src": "/assets/images/wardrobe/80876341-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton poplin shirt in sand beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "2b8caa84e506c98610a58b74bc969090080f78ebb93c8c3f44c36d540185aaaa",
+      "bytes": 249106,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80912021",
+      "src": "/assets/images/wardrobe/80912021-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s oversized check silk shirt in sand beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "7210942eadf13a67ed8c07255b03fed18c003818bab025deceab959662892950",
+      "bytes": 267318,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81219961",
+      "src": "/assets/images/wardrobe/81219961-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton oxford shirt in white, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "d54e44d47f347baa6d31a0c5dae26118704a3a43537a5c8e59d994e1f4404219",
+      "bytes": 251944,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81231661",
+      "src": "/assets/images/wardrobe/81231661-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton poplin shirt in sand beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "ed3f7cebcb85b72e6fb8285007a7e5539f2272e3d71aa69757e281368b614eec",
+      "bytes": 253786,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81219971",
+      "src": "/assets/images/wardrobe/81219971-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton oxford shirt in blue smoke, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "e3bead300b1cb6b452b0456512432f3bcd89593a3af2ec694ea1bc46aad07bb4",
+      "bytes": 261752,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "80919251",
+      "src": "/assets/images/wardrobe/80919251-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton shirt in black, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "7d8a70e04f066b1da8c51a542dc15b3e4d219fb9da5c5d602372967fde9eebce",
+      "bytes": 215884,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81302441",
+      "src": "/assets/images/wardrobe/81302441-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in finch brown, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "5e7b06200f4795936199bc95bb75e06c34c7bd522aa75406d4fcc16c4a6a3165",
+      "bytes": 285164,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81378411",
+      "src": "/assets/images/wardrobe/81378411-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in nickel grey, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "3e3110150dc91e5f2cd4732d99a5569d9cf763af430c4effa7acdbddac99bd77",
+      "bytes": 223904,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81272531",
+      "src": "/assets/images/wardrobe/81272531-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit striped cotton shirt in vineyard red, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "d120fe4cf8cb7bf9eeaa923e992d432ce0031d7d171fe40792713f0594946f07",
+      "bytes": 275456,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81279871",
+      "src": "/assets/images/wardrobe/81279871-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s cotton overshirt in black, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "b24d6e38c3efcc4629e0d119856f187e929fd98f8e5c33c22a4b6c94d083b9fd",
+      "bytes": 228986,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81236841",
+      "src": "/assets/images/wardrobe/81236841-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check linen shirt in sand beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "4900567ba26c602e0f8627269026e6c50ca94e956de2298acb37b172a0ba1a32",
+      "bytes": 288234,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81278841",
+      "src": "/assets/images/wardrobe/81278841-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit tropical gabardine shirt in seafarer blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "5be8e21ba4d67677a59467e468d21ae92189532b4c5ae6956aeccc9f6f9d54d1",
+      "bytes": 239366,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81326721",
+      "src": "/assets/images/wardrobe/81326721-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s check wool flannel overshirt in dove grey, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "14c2e50a8ce9a5d03b7e2061d2868b5b8e0b823393748c670d6a52ef55c3ef33",
+      "bytes": 259622,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81330771",
+      "src": "/assets/images/wardrobe/81330771-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in marsh green, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "95a265072cf1f02e1be7dc7e8e3131174c1e7a07715e213f044bd1dea03474f8",
+      "bytes": 247444,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81208111",
+      "src": "/assets/images/wardrobe/81208111-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton voile shirt in black, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "b6521e2c870a6f66cf3cd713c4c657290b6994fe951759723df11ea23ef26a58",
+      "bytes": 223752,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81332131",
+      "src": "/assets/images/wardrobe/81332131-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s check wool flannel overshirt in teal blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "fcee4fdcec951759092a68981cd48b2ba0d863ae5d863ceff104b465c6a073e8",
+      "bytes": 242174,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81326581",
+      "src": "/assets/images/wardrobe/81326581-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s check corduroy overshirt in white/dark blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "780a5d0b3a181b437a04ea165147cafe16fc611d3f21431811b05b43a8a6adcd",
+      "bytes": 268544,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81236701",
+      "src": "/assets/images/wardrobe/81236701-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton shirt in wave blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "04864fb16bc7f85dbe7ef88168d1ae55d720fcd83ba7fcf8b5f17681da28a9d5",
+      "bytes": 248986,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81301761",
+      "src": "/assets/images/wardrobe/81301761-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s check cotton linen overshirt in peacock blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "c2f3f895571a522a334b12da043e0a38ea80fac303d241c70159e19a83b12a8a",
+      "bytes": 298400,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81236741",
+      "src": "/assets/images/wardrobe/81236741-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit check cotton shirt in cornflower blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "288e87508955bbbf341a19d3f2e29e7e27c5006220c272234bfbf00b93e75726",
+      "bytes": 269652,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81322091",
+      "src": "/assets/images/wardrobe/81322091-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check cotton shirt in sand beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "b879c92246e4b762d54b010c601834f53f147c99b290b8a25e57af41fc8e2caf",
+      "bytes": 272650,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81265161",
+      "src": "/assets/images/wardrobe/81265161-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton shirt in oatmeal beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "c2afbb099aa3366f9aaa769d07a104a3e6e93448dd88a293078d68319e25ea59",
+      "bytes": 224818,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81335271",
+      "src": "/assets/images/wardrobe/81335271-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit gingham cotton shirt in pale mauve grey, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "de4876e72707c0cbb4e9aa378f7830b07ad46469434e8ab6092126e87518c16e",
+      "bytes": 251752,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81162481",
+      "src": "/assets/images/wardrobe/81162481-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton tuxedo shirt in white, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "cc1eda43452ce6324142a740314b72b783c47d4478106d8ed82f6f48cd3181cd",
+      "bytes": 213440,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81237171",
+      "src": "/assets/images/wardrobe/81237171-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit check embroidered cotton shirt in sparrow beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "340bd0cd54efbf3d399d49810d8fb6b5321e795df956acfed283841006be4c82",
+      "bytes": 246776,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81326711",
+      "src": "/assets/images/wardrobe/81326711-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s check wool flannel overshirt in sepia brown, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "d5bc585317706c2fb2a80dfebf9256fd07bfdaca7d88848c4f76d794457e48f4",
+      "bytes": 267618,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81335281",
+      "src": "/assets/images/wardrobe/81335281-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit gingham cotton shirt in cool cornflower blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "f442438a68203c305a13aac81979a28c77ff284c29d4a62577aa1fb4391574d8",
+      "bytes": 274122,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81011731",
+      "src": "/assets/images/wardrobe/81011731-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s slim fit cotton poplin formal shirt in neptune blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "33013a4bd297b230f45647bfb1ea310fc18949829d906d1c9cea16bc3297e2a2",
+      "bytes": 214560,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81238101",
+      "src": "/assets/images/wardrobe/81238101-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton blend shirt in bright navy, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "21a9cd1c2512762200f0af95367da68ce7f8134b103cdbb3152039063c4f01ff",
+      "bytes": 298492,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81263041",
+      "src": "/assets/images/wardrobe/81263041-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s nylon zip overshirt in sparrow beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "d85670800c5246d3c6069bcd6b54bf55e25001ca15cf997c4f42a35f648cf0e5",
+      "bytes": 207518,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81277361",
+      "src": "/assets/images/wardrobe/81277361-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit feather print cotton shirt in ink blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "d38532d58dbe1ecc54485913b19d7d194da52265916f571910ab3ea272816a10",
+      "bytes": 259844,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81277351",
+      "src": "/assets/images/wardrobe/81277351-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit knot check cotton shirt in maritime blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "db0c783278334e9220335e42a7ad22492730e1d9bb612f42f6f4c08bda60ee96",
+      "bytes": 272262,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81280771",
+      "src": "/assets/images/wardrobe/81280771-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit knight heart cotton shirt in black, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "846cd3c13a19acbe44a0914d597ae94bacf13d4f47469272767a9066e4794f2f",
+      "bytes": 217842,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81330701",
+      "src": "/assets/images/wardrobe/81330701-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in optic white, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "cb50eb039cf4cc9b85e52eb280845b0eacade8614fb415383f02ace2bb81c344",
+      "bytes": 212530,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81277531",
+      "src": "/assets/images/wardrobe/81277531-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s coated nylon overshirt in finch brown, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "898a691129b5845bf35cc75d0dc75a783c63acba36bd95dc8f7cfa5bd4802799",
+      "bytes": 216380,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81347921",
+      "src": "/assets/images/wardrobe/81347921-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s wool cashmere overshirt in lead grey melange, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "b72029ce7af2c62b80af2ce015acdee34b8e361590587ae6638b0cc04a6d58e0",
+      "bytes": 253566,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81337701",
+      "src": "/assets/images/wardrobe/81337701-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s corduroy overshirt in chocolate brown, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "3074928f18244e9862370c0bab0610c87d58e05e1470957f59619303019b0efa",
+      "bytes": 260468,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "85000961",
+      "src": "/assets/images/wardrobe/85000961-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit striped cotton shirt in sky blue, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "ef68ed545f68ec3cdca349a1cf44cfe15b4d3307c3df5c744d091b7901a1ce66",
+      "bytes": 231116,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81278791",
+      "src": "/assets/images/wardrobe/81278791-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s tropical gabardine and check shirt in finch brown, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "54ef44e694d1881452346a0d1f4e609fce1f137714d2714e1ddafe7618f6946d",
+      "bytes": 237922,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81353601",
+      "src": "/assets/images/wardrobe/81353601-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit silk shirt in clam beige, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "5f569e8563ed931af6e1b66501c8693d9c6d3c5e072aaf871b9a48c5d193bcfa",
+      "bytes": 216486,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81330691",
+      "src": "/assets/images/wardrobe/81330691-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s classic fit cotton poplin shirt in black, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "08a98e8991e4ce05c4068f8605ed87852c0b338c8b42a9c45443ae495a205ab1",
+      "bytes": 211224,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": "81348371",
+      "src": "/assets/images/wardrobe/81348371-santos-sunglasses.webp",
+      "alt": "Bear wearing Burberry’s relaxed fit silk shirt in begonia pink, with sunglasses and a Santos de Cartier necklace.",
+      "reviewed": true,
+      "sha256": "47233c31789d42af676e66dc1adab62ebdeb0db2c185b9a298a366431d3b4a76",
+      "bytes": 236238,
+      "width": 1254,
+      "height": 1254
+    }
+  ],
+  "verification": {
+    "status": "complete",
+    "algorithm": "sha256",
+    "assetCount": 144
+  }
+}

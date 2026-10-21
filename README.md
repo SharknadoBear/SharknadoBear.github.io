@@ -46,11 +46,21 @@ Keep `draft: true` while writing. Drafts produce no page and appear in no listin
 
 Put images and downloadable files in `src/assets/`. Reference them with site-root paths such as `/assets/maps/example.png`; the build applies the configured hosting prefix. Supply useful `imageAlt` text for every content image. For a map, include the source, units, and any important context in the article. Add plushy ID-card and pet-package links only after the real files are present.
 
-## Bear portrait
+## Bear portrait and daily wardrobe
 
-The supplied bear portrait is stored at `src/assets/images/bear-avatar.png`. Its settings in `src/_data/site.json` use `avatar: "/assets/images/bear-avatar.png"` and `avatarTemporary: false`.
+The original portrait remains at `src/assets/images/bear-avatar.png` as the initial image and the fallback when JavaScript, manifest loading, or today's image fails. Keep its dimensions, crop, polaroid frame, and surrounding layout unchanged.
 
-To replace it later, save the new portrait under `src/assets/images/`, update `avatar` and the descriptive `avatarAlt`, and keep `avatarTemporary: false`. Rebuild and check the crop on desktop and mobile.
+The wardrobe contains 72 shirt/colorway pairs (144 WebP portraits) under `src/assets/images/wardrobe/`. Ordinary portraits retain clear glasses. Special portraits use sunglasses and the Santos de Cartier necklace. The public `manifest.json` contains only the stable product IDs, descriptive alternative text, file locations, dimensions, sizes, and SHA-256 hashes needed to verify and select these images. Source references, generation records, archives, and private review material stay outside the public repository.
+
+`src/assets/js/wardrobe/` selects one portrait per Seattle calendar day (`America/Los_Angeles`). Weekends, January 16, and the 11 recurring nationwide US federal holidays, including standard observed dates, use the special pool. Other days use the ordinary pool. Each pool cycles independently through all 72 entries; refreshing does not advance it. Preserve the January 1, 2026 epoch and manifest order after launch. Open pages recheck at Seattle midnight and when returning to a visible tab.
+
+Only today's selected portrait is preloaded. The original stays visible until that image loads successfully. The script changes only the image source and descriptive alternative text. Selection uses the visitor's clock and has no cookies, tracking, or remote runtime service.
+
+Before replacing a wardrobe asset, review the actual image, preserve a master outside this public repository, and update its exact hash, byte size, dimensions, and alternative text in the paired manifest. Use a new filename when changing published image bytes. Builds reject incomplete pools, missing files, or changed bytes. Run `pnpm test:wardrobe`, `pnpm check`, and `pnpm build`; inspect the actual ordinary and special portraits in the existing frame before publishing.
+
+## Current presentation
+
+Navigation uses The Den, Rabbit Holes, and Mud Pond. The project cards and matching pages are Another wandering day, Family member demographic, and Bear 5; their original URL paths remain stable. Bear requested removal of the homepage biography section. Professional and family links remain in the footer.
 
 ## Hosting
 
