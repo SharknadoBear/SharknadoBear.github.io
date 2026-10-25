@@ -69,3 +69,27 @@ The live site is [Bear’s Den](https://sharknadobear.github.io/). Its authorita
 Build with `SITE_PATH_PREFIX=/` for this root user site. The default build prefix is also `/`; clear any old `/bears-den/` setting in your shell. The workflow on `main` installs, checks, builds, and publishes the complete `dist/` output through GitHub Actions. See [DEPLOYMENT.md](DEPLOYMENT.md) for publishing and private draft handling, and [HANDOFF.md](HANDOFF.md) for authoring and review guidance.
 
 The first release contains three project introductions and an empty journal. Real map entries, plushy records, ID cards, Codex pet packages, and the Bear 5 robot are future work. There is no browser editor, account system, database, or runtime API.
+
+## Refresh the resident ID gallery
+
+The **Family member demographic** page at `/projects/home-plushy-demographic/` uses `src/_data/plushieIds.json` and committed files in `src/assets/plushie-ids/`. The gallery count comes from this data. The gallery contains eleven front images and eleven combined front-and-back PDFs. Keep the original nine residents first: Al Ode, Bear 5, Bear 5.5, Bear 27, Patrick, Shark 3, Shark 4, Snakey, and Wolfie; then Captain Bug and Cookie Monster. Front images appear uncropped and open at full size in a new tab; each card offers the actual combined front-and-back PDF.
+
+The local ID workspace is needed only to import new or revised cards. Normal builds and GitHub Actions use the committed data and assets directly and must not run the importer.
+
+When updated ID folders are supplied, run this explicit import from the site checkout, then review the resulting changes:
+
+```sh
+node scripts/import-plushie-ids.mjs "PATH/TO/plushie-ids"
+pnpm check
+pnpm build
+```
+
+Without a path argument, the importer reads `deliverables/plushie-ids`. It reads each resident's `01_identity/identity.json` and current manifest, verifies export hashes, and copies only the current `web/front.webp` and `print/front-back.pdf` exports from `02_id_photos_and_pdfs/`. It refreshes existing cards while preserving their current gallery order and `petPackage` settings. New residents are appended in deterministic natural name order unless an explicit source order is supplied for those additions. Residents absent from the supplied workspace stay in the gallery. Do not commit historical revisions, raw photos, render templates, private ID workspace files, or the ID creation skill.
+
+To set an explicit order for newcomers, add an `order.json` file to the import folder containing an array of resident slugs, for example `["captain-bug", "cookie-monster"]`. Existing residents keep their positions; unlisted newcomers append in natural name order. Duplicate or unknown slugs are rejected.
+
+To enable a Codex pet download, place the real reviewed package under `src/assets/` and set that resident's `petPackage` to its site-root path. Leave it `null` for the inactive "coming soon" label. Never create a placeholder link or empty package; a configured download must exist before publication.
+
+The gallery creates no individual resident pages. Future Markdown plushy profiles remain supported and appear in a separate Resident stories list. To remove a resident, explicitly remove its gallery record and its published assets; importing a workspace that still contains that resident will add it again.
+
+Continue from the current GitHub repository when applying later ZIP updates. Merge only the requested gallery changes and preserve the repository's project names, page titles, navigation labels, button text, URLs, wardrobe, and unrelated content.

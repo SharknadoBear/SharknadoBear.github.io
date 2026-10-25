@@ -12,4 +12,37 @@ artNote: important citizens, soft credentials
 ---
 <section class="project-story"><p class="eyebrow">THE IDEA</p><h2>A census with<br> a softer side.</h2><div class="prose"><p>This is the future home of all the plushy animals at my places: their names, their stories, their particular personalities, and the little details that make each one themselves.</p><p>Every resident will eventually have a profile, a downloadable ID card, and a Codex pet package—so a small version of them can keep you company on screen, too.</p></div></section>
 <section class="resident-kit" aria-labelledby="resident-kit-title"><h2 id="resident-kit-title">A little kit for every resident.</h2><div class="kit-grid"><div><span>01 / THE STORY</span><h3>A plushy profile</h3><p>A portrait, a name, and the things worth knowing about this particular inhabitant.</p></div><div><span>02 / THE CREDENTIALS</span><h3>An ID of their own</h3><p>A downloadable identity card. Very official business for a very soft citizen.</p></div><div><span>03 / THE COMPANION</span><h3>A Codex pet package</h3><p>A downloadable digital companion, made individually for each plushy.</p></div></div></section>
-<section class="collection-section"><div class="section-heading"><h2>Meet the residents</h2><span class="hand-note">roll call, coming soon</span></div>{% if collections.plushies.length %}{% set entries = collections.plushies %}{% include "entry-list.njk" %}{% else %}<div class="collection-empty"><span class="collection-symbol" aria-hidden="true">♡</span><h3>The residents are getting ready.</h3><p>The first profiles, ID cards, and pet packages will appear here<br> once their portraits and stories are gathered.</p></div>{% endif %}</section>
+<section class="collection-section resident-section" aria-labelledby="residents-title">
+  <div class="section-heading">
+    <div>
+      <h2 id="residents-title">Meet the residents</h2>
+      <p class="resident-count">{{ plushieIds.length }} residents in the den.</p>
+      <p class="gallery-hint">Take a closer look at an ID, or download both sides as a PDF.</p>
+    </div>
+    <span class="hand-note">small cards, big personalities</span>
+  </div>
+  <div class="resident-grid">
+    {% for resident in plushieIds %}
+    <article class="resident-card" aria-labelledby="resident-{{ resident.slug }}">
+      <h3 id="resident-{{ resident.slug }}">{{ resident.name | escape }}</h3>
+      <a class="resident-image-link" href="{{ resident.image | escape }}" target="_blank" rel="noopener" aria-label="View {{ resident.name | escape }}'s full-size ID front (opens in a new tab)">
+        <img src="{{ resident.image | escape }}" alt="{{ resident.imageAlt | escape }}" width="{{ resident.width }}" height="{{ resident.height }}" loading="lazy" decoding="async">
+      </a>
+      <div class="resident-downloads">
+        <a class="resident-id-download" href="{{ resident.idCard | escape }}" download="{{ resident.slug }}-id-card.pdf" aria-label="Download ID card (PDF) for {{ resident.name | escape }}">Download ID card (PDF) <span aria-hidden="true">&#8595;</span></a>
+        {% if resident.petPackage %}
+        <a class="resident-pet-download" href="{{ resident.petPackage | escape }}" download aria-label="Download Codex pet package for {{ resident.name | escape }}">Download Codex pet package <span aria-hidden="true">&#8595;</span></a>
+        {% else %}
+        <span class="resident-pet-pending">Codex pet package &mdash; coming soon</span>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% if collections.plushies.length %}
+<section class="collection-section resident-stories" aria-labelledby="resident-stories-title">
+  <div class="section-heading"><h2 id="resident-stories-title">Resident stories</h2></div>
+  {% set entries = collections.plushies %}{% include "entry-list.njk" %}
+</section>
+{% endif %}

@@ -11,7 +11,10 @@
     "build": "node scripts/build.mjs",
     "check": "node --test tests/wardrobe.test.mjs && node scripts/check.mjs",
     "test:wardrobe": "node --test tests/wardrobe.test.mjs",
-    "verify:wardrobe": "node scripts/verify-wardrobe.mjs"
+    "verify:wardrobe": "node scripts/verify-wardrobe.mjs",
+    "import:plushie-ids": "node scripts/import-plushie-ids.mjs",
+    "test:plushie-import": "node scripts/check-plushie-import.mjs",
+    "verify:plushie-gallery": "node scripts/verify-plushie-gallery.mjs"
   },
   "devDependencies": { "@11ty/eleventy": "3.1.7" }
 }

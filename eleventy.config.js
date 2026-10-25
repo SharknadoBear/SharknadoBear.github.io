@@ -3,6 +3,7 @@ import { statSync } from "node:fs";
 import { lstat, readdir, unlink } from "node:fs/promises";
 import path from "node:path";
 import { verifyWardrobe } from "./scripts/verify-wardrobe.mjs";
+import { verifyPlushieGallery } from "./scripts/verify-plushie-gallery.mjs";
 
 function hostingPrefix(value = "/") {
   const prefix = value.trim();
@@ -110,6 +111,7 @@ export default function (eleventyConfig) {
     }
     // Verify the exact input tree, including isolated checks and live rebuilds.
     await verifyWardrobe({ inputRoot: input });
+    await verifyPlushieGallery({ inputRoot: input });
   });
   // Eleventy otherwise leaves pages on disk when their source is removed or
   // made a draft. The complete successful result list also cleans preview.

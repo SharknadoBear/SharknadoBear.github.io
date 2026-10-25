@@ -7,6 +7,7 @@ import { once } from "node:events";
 import { createServer } from "node:net";
 import { setTimeout as delay } from "node:timers/promises";
 import { fileURLToPath, pathToFileURL } from "node:url";
+import { verifyPlushieImport } from "./check-plushie-import.mjs";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const cli = fileURLToPath(new URL("../cmd.cjs", import.meta.resolve("@11ty/eleventy")));
@@ -119,6 +120,49 @@ async function writeFixture(section, slug, metadata, body) {
     "",
   ].join("\n");
   await writeFile(path.join(input, "content", section, `${slug}.md`), content);
+}
+
+async function verifyGallery(output, prefix) {
+  const residents = JSON.parse(await readFile(path.join(input, "_data", "plushieIds.json"), "utf8"));
+  const html = await readFile(path.join(output, "projects", "home-plushy-demographic", "index.html"), "utf8");
+  assert.equal((html.match(/class="resident-card"/g) || []).length, residents.length);
+  const ids = [...html.matchAll(/<h3 id="resident-([^"]+)"/g)].map((match) => match[1]);
+  assert.deepEqual(ids, residents.map((resident) => resident.slug), "Rendered residents preserve the approved data order");
+  assert(html.includes(`class="resident-count">${residents.length} residents in the den.</p>`), "The gallery displays its data-driven count");
+  assert.equal((html.match(/class="resident-pet-pending"/g) || []).length, residents.filter((resident) => !resident.petPackage).length);
+  assert.equal((html.match(/class="resident-pet-download"/g) || []).length, residents.filter((resident) => resident.petPackage).length);
+  for (const resident of residents) {
+    const image = `${prefix}${resident.image.slice(1)}`;
+    assert(html.includes(`href="${image}" target="_blank" rel="noopener"`), "Full-size front link");
+    assert(html.includes(`src="${image}"`), "Gallery image respects hosting prefix");
+    assert(html.includes(`href="${prefix}${resident.idCard.slice(1)}" download="${resident.slug}-id-card.pdf"`), "Real PDF download respects hosting prefix");
+    if (resident.petPackage) assert(html.includes(`href="${prefix}${resident.petPackage.slice(1)}" download`));
+  }
+  assert(!html.includes('<a class="resident-pet-pending"'), "Pending packages must not be fake links.");
+}
+
+async function verifyGalleryPetDownloads() {
+  const dataFile = path.join(input, "_data", "plushieIds.json");
+  const original = await readFile(dataFile, "utf8");
+  const residents = JSON.parse(original);
+  try {
+    residents[0].petPackage = "/assets/qa-pet-package.zip";
+    await writeFile(dataFile, JSON.stringify(residents));
+    for (const [label, prefix] of [["root", "/"], ["subdirectory", "/bears-den-check/"]]) {
+      const output = path.join(scratch, `pet-gallery-${label}`);
+      build(output, prefix);
+      await verifyGallery(output, prefix);
+    }
+    residents[0].petPackage = "/assets/qa-missing-pet.zip";
+    await writeFile(dataFile, JSON.stringify(residents));
+    const result = spawnSync(process.execPath, [cli, "--quiet", `--config=${path.join(root, "eleventy.config.js")}`], {
+      cwd: scratch, encoding: "utf8",
+      env: { ...process.env, SITE_INPUT: "src", SITE_OUTPUT: path.join(scratch, "invalid-gallery"), SITE_PATH_PREFIX: "/" },
+    });
+    assert.notEqual(result.status, 0, "A missing gallery package must stop the build.");
+    assert(`${result.stdout}${result.stderr}`.includes("petPackage points to a missing asset"));
+  } finally { await writeFile(dataFile, original); }
+  console.log("PASS: gallery pet downloads activate only with existing files, including subdirectory URLs.");
 }
 
 async function addFixtures() {
@@ -298,14 +342,17 @@ async function verifyLivePreview() {
 }
 
 try {
+  await verifyPlushieImport(scratch);
   await cp(path.join(root, "src"), input, { recursive: true });
   for (const [label, prefix] of [["root", "/"], ["subdirectory", "/bears-den-check/"]]) {
     const output = path.join(scratch, `initial-${label}`);
     build(output, prefix);
     await verifyOutput(output, prefix, true);
+    await verifyGallery(output, prefix);
     console.log(`PASS: current site pages, links, assets, anchors, and structure at ${prefix}`);
   }
   await addFixtures();
+  await verifyGalleryPetDownloads();
   for (const [label, prefix] of [["root", "/"], ["subdirectory", "/bears-den-check/"]]) {
     const output = path.join(scratch, `fixtures-${label}`);
     build(output, prefix);

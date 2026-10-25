@@ -62,3 +62,20 @@ h2{font-size:46px}h3{font-size:34px}
 /* Decorative section labels and the simplified footer. */
 .bear-honey-chain{font-family:"Segoe UI Emoji","Apple Color Emoji",sans-serif;font-size:20px;line-height:1.6;letter-spacing:4px;margin-bottom:10px}
 .footer-bottom{justify-content:flex-end}
+
+/* Resident gallery: show the complete landscape ID artwork without cropping. */
+.resident-section{border-top:1px solid var(--line);padding-top:32px;margin-bottom:52px}
+.resident-section .resident-count{font-size:19px;line-height:1.5;margin-top:8px;color:var(--ink)}
+.resident-section .gallery-hint{font-size:20px;line-height:1.5;margin-top:6px}
+.resident-section .resident-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 24px}
+.resident-section .resident-card{min-width:0;background:var(--cream);border:1px solid var(--line);border-radius:5px;box-shadow:0 3px 0 #e8e9dc;padding:19px 14px 21px}
+.resident-section .resident-card h3{font-size:35px;line-height:1.1;margin:0 5px 17px}
+.resident-section .resident-image-link{display:block;border:1px solid #d1d6c7;border-radius:3px}
+.resident-section .resident-image-link img{display:block;width:100%;height:auto;object-fit:contain}
+.resident-section .resident-downloads{display:flex;flex-direction:column;gap:11px;margin:19px 5px 0;align-items:flex-start}
+.resident-section .resident-downloads a{font:600 24px/1.3 var(--hand);color:var(--ink);text-decoration-thickness:1px;text-decoration-color:#a5af96;padding-block:3px}
+.resident-section .resident-downloads a:hover{color:#8b5533}
+.resident-section .resident-downloads a span{margin-left:5px}
+.resident-section .resident-pet-pending{font:18px/1.4 var(--body);color:#666b5c}
+@media(max-width:1099px){.resident-section .resident-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:759px){.resident-section{padding-top:27px}.resident-section .section-heading{margin-bottom:25px}.resident-section .resident-grid{grid-template-columns:minmax(0,1fr);gap:25px}.resident-section .gallery-hint{font-size:19px}.resident-section .resident-card{padding:18px 13px 21px}.resident-section .resident-card h3{font-size:34px}}

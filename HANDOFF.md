@@ -88,8 +88,18 @@ Bear requested removal of the homepage biography section; do not restore it whil
 
 Bear 5 describes a planned Raspberry Pi 5 conversation phase followed by sensing; Gemma 4 is a candidate for later evaluation, not a claim of implemented or verified hardware compatibility.
 
-The source contains no hosting credentials, automated messages to Dot, real pet packages, ID cards, or robot software. The committed GitHub Actions workflow manages the public deployment described in DEPLOYMENT.md.
+The source contains no hosting credentials, automated messages to Dot, real pet packages, or robot software. The committed GitHub Actions workflow manages the public deployment described in DEPLOYMENT.md.
 
 ## Wardrobe release checks
 
 Run pnpm test:wardrobe as well as the site checks. Verify ordinary weekdays, weekends, actual and observed federal holidays, January 16, Seattle midnight and daylight-saving transitions, same-day refresh stability, and failed-image fallback. Confirm that all 144 hash-bound portraits are deployed, while the browser requests only its selected daily portrait. Keep the 72-item order and epoch unchanged. Do not publish original ZIPs, garment references, generation prompts, or private review files.
+
+## Resident gallery maintenance
+
+The resident gallery is part of the existing **Family member demographic** page at `/projects/home-plushy-demographic/`. Its ordered records live in `src/_data/plushieIds.json`; its eleven front images and eleven combined front-and-back PDFs live under `src/assets/plushie-ids/`. Build these committed files directly. GitHub Actions must not import from the local ID workspace or depend on that workspace being present.
+
+For later updates, inspect the supplied current ID exports, run `node scripts/import-plushie-ids.mjs "PATH/TO/plushie-ids"` locally, and review the data and selected assets before committing. The default source is `deliverables/plushie-ids`. The importer verifies source manifest hashes, preserves existing resident order and pet-package paths, and retains residents absent from the import folder. It appends new residents in deterministic natural name order unless an explicit source order is supplied for those additions. README.md describes package activation and explicit removal.
+
+Verify the data-derived count of eleven and preserve the original nine residents first: Al Ode, Bear 5, Bear 5.5, Bear 27, Patrick, Shark 3, Shark 4, Snakey, Wolfie. Captain Bug and Cookie Monster follow them in that order. Inspect three columns on desktop, two on tablet, and one on phones, with complete uncropped fronts. Follow each image link to its full front in a new tab and download each actual two-page PDF. Codex pet packages remain inactive "coming soon" text while their data value is `null`. Future Markdown profiles appear separately as Resident stories; the gallery itself generates no profile pages and needs no runtime JavaScript.
+
+Use the current authoritative repository as the source of truth for names, navigation, buttons, URLs, hosting, and unrelated changes. Never replace the site with an older gallery ZIP. Run the existing checks and complete build, preserve the wardrobe and other content, and publish through the existing deployment workflow only when authorized. After publication, verify the exact commit and Actions deployment, the live gallery and its downloads, and the existing site pages.
