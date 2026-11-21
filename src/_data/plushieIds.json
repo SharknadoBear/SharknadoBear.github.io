@@ -250,5 +250,113 @@
     "imageSha256": "d113c36b6ee7a03695d032414cbfc9a41bc9cc6f89fb6e440ab6190888c19f5c",
     "idCardSha256": "e98290c1360ff81a43a311eaeace61004317c90175b92417ea776544a3799fd7",
     "petPackage": null
+  },
+  {
+    "slug": "3head-bear",
+    "name": "3Head Bear",
+    "image": "/assets/plushie-ids/3head-bear/front.webp",
+    "imageAlt": "Front of 3Head Bear's Bear's Den novelty ID card",
+    "width": 1200,
+    "height": 757,
+    "idCard": "/assets/plushie-ids/3head-bear/id-card.pdf",
+    "imageSha256": "88f8ee5b4afb170dca92757916edc20cf840bce4c2d1d9d61fdc9f180f5c3267",
+    "idCardSha256": "72434bd125c95c68f3e164435476ede16db51f905566f5b00443f3d048acbcbc",
+    "petPackage": null
+  },
+  {
+    "slug": "bear-30",
+    "name": "Bear 30",
+    "image": "/assets/plushie-ids/bear-30/front.webp",
+    "imageAlt": "Front of Bear 30's Bear's Den novelty ID card",
+    "width": 1200,
+    "height": 757,
+    "idCard": "/assets/plushie-ids/bear-30/id-card.pdf",
+    "imageSha256": "31e6b8bf40c61f19c2b134f190d9ba6509e65f0d88f0a5c50a8d45c0673ca4fd",
+    "idCardSha256": "c6ba6d9c0a737b2f830055c5e317e6b87355916281db3c5458e48329ad3aee5b",
+    "petPackage": null
+  },
+  {
+    "slug": "bouquet",
+    "name": "Bouquet",
+    "image": "/assets/plushie-ids/bouquet/front.webp",
+    "imageAlt": "Front of Bouquet's Bear's Den novelty ID card",
+    "width": 1200,
+    "height": 757,
+    "idCard": "/assets/plushie-ids/bouquet/id-card.pdf",
+    "imageSha256": "42d65a11aad6a786fb6f91567cb1b98ccccbb2bb7c6a3164896d5b0c0625c145",
+    "idCardSha256": "488f9d632527779a02de6f26625adbc7eac3b0046fa67857aa4a7bea8704bb34",
+    "petPackage": null
+  },
+  {
+    "slug": "domtri-hachiware",
+    "name": "Domtri Hachiware",
+    "image": "/assets/plushie-ids/domtri-hachiware/front.webp",
+    "imageAlt": "Front of Domtri Hachiware's Bear's Den novelty ID card",
+    "width": 1200,
+    "height": 757,
+    "idCard": "/assets/plushie-ids/domtri-hachiware/id-card.pdf",
+    "imageSha256": "0fb96c117d5b6eceeea0bfb9be77a9e990ec3c27c2c47040a5c5ea4816adb459",
+    "idCardSha256": "148b7eb41a8063bfed9e8e64850e30410a405d92903b8cb23df16e3389d57be4",
+    "petPackage": null
+  },
+  {
+    "slug": "elmo",
+    "name": "Elmo",
+    "image": "/assets/plushie-ids/elmo/front.webp",
+    "imageAlt": "Front of Elmo's Bear's Den novelty ID card",
+    "width": 1200,
+    "height": 757,
+    "idCard": "/assets/plushie-ids/elmo/id-card.pdf",
+    "imageSha256": "11b4045502904bb1adf428d108d5be7914741fbf0e1a405aba4679c448adf889",
+    "idCardSha256": "a1e8505780727f09065795387abcef961865301303d5acb41f66715481752120",
+    "petPackage": null
+  },
+  {
+    "slug": "gator-1",
+    "name": "Gator 1",
+    "image": "/assets/plushie-ids/gator-1/front.webp",
+    "imageAlt": "Front of Gator 1's Bear's Den novelty ID card",
+    "width": 1200,
+    "height": 757,
+    "idCard": "/assets/plushie-ids/gator-1/id-card.pdf",
+    "imageSha256": "68761a12386e34549e6882a9ebc8e321a241602e13ed6db5a9c771d3b16f45ca",
+    "idCardSha256": "268a98cbbc85e8123c980ca8407cfe4e6f9f958bd9068c83fb347960f17e3a41",
+    "petPackage": null
+  },
+  {
+    "slug": "moski-bear",
+    "name": "Moski Bear",
+    "image": "/assets/plushie-ids/moski-bear/front.webp",
+    "imageAlt": "Front of Moski Bear's Bear's Den novelty ID card",
+    "width": 1200,
+    "height": 757,
+    "idCard": "/assets/plushie-ids/moski-bear/id-card.pdf",
+    "imageSha256": "fe98c7340dd87429cb22a49e01f06744b3e2b21d32b27ab586bfee411d859dee",
+    "idCardSha256": "75ade9c6f1e2d7c47ffd17ea9c060eaed727e042219dd2c314b76f500acce3ec",
+    "petPackage": null
+  },
+  {
+    "slug": "pumpkin",
+    "name": "Pumpkin",
+    "image": "/assets/plushie-ids/pumpkin/front.webp",
+    "imageAlt": "Front of Pumpkin's Bear's Den novelty ID card",
+    "width": 1200,
+    "height": 757,
+    "idCard": "/assets/plushie-ids/pumpkin/id-card.pdf",
+    "imageSha256": "9bfd27f0c3aefd9b52733a73d3f6b218cb014218809b9df81f1bc604d7d36115",
+    "idCardSha256": "9a4f5e4b773be2f2f2108826b67058ea7f05d971461935b9b481420a7eeaad4c",
+    "petPackage": null
+  },
+  {
+    "slug": "tom-nook",
+    "name": "Tom Nook",
+    "image": "/assets/plushie-ids/tom-nook/front.webp",
+    "imageAlt": "Front of Tom Nook's Bear's Den novelty ID card",
+    "width": 1200,
+    "height": 757,
+    "idCard": "/assets/plushie-ids/tom-nook/id-card.pdf",
+    "imageSha256": "b975c204cc7f995e9359838d6d0333a1d868be47caa7447f3b2639d395afa348",
+    "idCardSha256": "4fd046728884301e2a3be747198c12d8946f03052ded04a831e47a3169e58188",
+    "petPackage": null
   }
 ]
