@@ -79,3 +79,7 @@ h2{font-size:46px}h3{font-size:34px}
 .resident-section .resident-pet-pending{font:18px/1.4 var(--body);color:#666b5c}
 @media(max-width:1099px){.resident-section .resident-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:759px){.resident-section{padding-top:27px}.resident-section .section-heading{margin-bottom:25px}.resident-section .resident-grid{grid-template-columns:minmax(0,1fr);gap:25px}.resident-section .gallery-hint{font-size:19px}.resident-section .resident-card{padding:18px 13px 21px}.resident-section .resident-card h3{font-size:34px}}
+
+/* Decorative homepage bears beneath the resident project cover. */
+.project-cover .resident-cover-bears{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));align-items:center;justify-items:center;gap:clamp(4px,1vw,8px);margin-top:6px;padding-inline:4px;color:#111}
+.project-cover .resident-cover-bears .walking-bear{width:100%;max-width:46px;height:auto;min-width:0}
