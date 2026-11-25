@@ -19,14 +19,60 @@ artNote: follow the interesting lines
     <p><a href="/projects/nice-maps-and-wiggling-lines/cherry-blossom-atlas/">Open the full Cherry Blossom Atlas</a></p>
     <p>Pink markers show documented viewing sites, not current blooms. Optional amber markers are research candidates, not viewing recommendations. The atlas links to planting and bloom records from parks, gardens, tree inventories and other sources. Map data credits include <a href="https://github.com/topojson/us-atlas">US Atlas</a> and <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors (ODbL)</a>.</p>
   </div>
-  <figure class="blossom-postcard" id="blossom-postcard">
+  <figure class="blossom-postcard" id="blossom-postcard" data-animation="/assets/images/bear-cherry-blossom-petal-dance.gif">
     <img src="/assets/images/bear-cherry-blossom-petal-dance.png" width="358" height="354" alt="A little brown bear looks up at pink petals drifting from a cherry blossom tree." decoding="async">
-    <figcaption class="hand-note">A little spring shower</figcaption>
+    <figcaption class="hand-note">A little spring shower <button type="button" class="blossom-replay" hidden>Play the petal dance</button></figcaption>
   </figure>
   <style>
     .blossom-postcard{grid-column:1/-1;justify-self:center;width:min(100%,384px);margin:clamp(5px,2vw,26px) 0 0;padding:clamp(7px,1.5vw,13px);background:#fffdf5;border:1px solid #ddd5c3;border-radius:4px 8px 5px 7px;box-shadow:1px 4px 13px #66544516}
+    .blossom-postcard img[hidden]{display:none}
     .blossom-postcard img{display:block;width:100%;height:auto;border-radius:2px}
     .blossom-postcard figcaption{text-align:center;padding:5px 0 2px}
+    .blossom-replay{font:inherit;color:inherit;background:transparent;border:0;text-decoration:underline;cursor:pointer;padding:.25rem .5rem}
   </style>
+  <script>
+    (() => {
+      const card = document.getElementById('blossom-postcard');
+      const still = card.querySelector('img');
+      const button = card.querySelector('button');
+      const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+      let player, timer;
+      let played = false;
+
+      const stop = () => {
+        clearTimeout(timer);
+        if (player) player.remove();
+        player = null;
+        still.hidden = false;
+        button.textContent = played ? 'Replay the petal dance' : 'Play the petal dance';
+      };
+      const play = () => {
+        if (player) return;
+        played = true;
+        const frame = still.cloneNode();
+        player = frame;
+        button.textContent = 'Stop the petal dance';
+        frame.addEventListener('load', () => {
+          if (player !== frame) return;
+          still.hidden = true;
+          still.before(frame);
+          timer = setTimeout(stop, 2760);
+        }, { once: true });
+        frame.addEventListener('error', () => { if (player === frame) stop(); }, { once: true });
+        frame.src = card.dataset.animation;
+      };
+      button.hidden = false;
+      button.addEventListener('click', () => player ? stop() : play());
+      reduceMotion.addEventListener('change', event => { if (event.matches) stop(); });
+      if (!reduceMotion.matches && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+          if (!entries.some(entry => entry.isIntersecting)) return;
+          observer.disconnect();
+          if (!played && !reduceMotion.matches) play();
+        }, { threshold: 0.35 });
+        observer.observe(card);
+      }
+    })();
+  </script>
 </section>
 <section class="collection-section"><div class="section-heading"><h2>The collection</h2><span class="hand-note">patterns worth a pause</span></div>{% if collections.maps.length %}{% for entry in collections.maps %}{% if entry.data.showFigureInCollection %}{{ entry.templateContent | safe }}{% endif %}{% endfor %}{% set entries = collections.maps %}{% include "entry-list.njk" %}{% else %}<div class="collection-empty"><span class="collection-symbol" aria-hidden="true">∿</span><h3>The first map hasn’t landed yet.</h3><p>A shelf for interesting maps and wiggling lines.<br> Real figures and the stories behind them will arrive here.</p></div>{% endif %}</section>
