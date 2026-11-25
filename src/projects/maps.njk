@@ -11,4 +11,13 @@ art: maps
 artNote: follow the interesting lines
 ---
 <section class="project-story"><p class="eyebrow">THE IDEA</p><h2>A second look<br> at the world.</h2><div class="prose"><p>Maps and graphs have a way of making a complicated world feel a little more understandable—and sometimes a little more surprising.</p><p>This notebook will collect interesting maps and figures I come across during work and personal projects: coastlines, currents, time series, and whatever else catches my eye.</p><p>Each entry will leave room for the figure, its source, a little context, and the question that made it worth keeping.</p></div></section>
+<section class="project-story" id="cherry-blossom-atlas">
+  <p class="eyebrow">THE CHERRY BLOSSOM ATLAS</p>
+  <h2>Where to find cherry blossoms</h2>
+  <div class="prose">
+    <p>An interactive map of 214 viewing sites across all 50 states and Washington, D.C., with 617 mapped tree records and 294 dated bloom records. Search by place or variety, browse by state, or look back at past bloom dates where records are available.</p>
+    <p><a href="/projects/nice-maps-and-wiggling-lines/cherry-blossom-atlas/">Open the full Cherry Blossom Atlas</a></p>
+    <p>Pink markers show documented viewing sites, not current blooms. Optional amber markers are research candidates, not viewing recommendations. The atlas links to planting and bloom records from parks, gardens, tree inventories and other sources. Map data credits include <a href="https://github.com/topojson/us-atlas">US Atlas</a> and <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors (ODbL)</a>.</p>
+  </div>
+</section>
 <section class="collection-section"><div class="section-heading"><h2>The collection</h2><span class="hand-note">patterns worth a pause</span></div>{% if collections.maps.length %}{% for entry in collections.maps %}{% if entry.data.showFigureInCollection %}{{ entry.templateContent | safe }}{% endif %}{% endfor %}{% set entries = collections.maps %}{% include "entry-list.njk" %}{% else %}<div class="collection-empty"><span class="collection-symbol" aria-hidden="true">∿</span><h3>The first map hasn’t landed yet.</h3><p>A shelf for interesting maps and wiggling lines.<br> Real figures and the stories behind them will arrive here.</p></div>{% endif %}</section>
