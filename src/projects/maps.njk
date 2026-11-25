@@ -21,7 +21,7 @@ artNote: follow the interesting lines
   </div>
   <figure class="blossom-postcard" id="blossom-postcard">
     <svg viewBox="0 0 560 322" width="560" height="322" role="img" aria-labelledby="blossom-scene-title">
-      <title id="blossom-scene-title">A little brown bear grins and reaches for pink petals falling from a cherry blossom tree.</title>
+      <title id="blossom-scene-title">A little brown bear notices falling cherry blossom petals, stands on its hind legs, and catches one in its paws.</title>
       <defs>
         <linearGradient id="blossom-postcard-paper" x2="0" y2="1">
           <stop stop-color="#fff1ec"/><stop offset="1" stop-color="#fff9eb"/>
@@ -67,7 +67,7 @@ artNote: follow the interesting lines
       <g fill="#f5b7c5" stroke="#c47c8c" stroke-width=".6">
         <use href="#postcard-petal" transform="translate(215 172) rotate(38)"/>
         <use href="#postcard-petal" transform="translate(271 154) rotate(-34)"/>
-        <use href="#postcard-petal" transform="translate(291 207) rotate(48)"/>
+        <use href="#postcard-petal" class="blossom-still-prize" transform="translate(315 185) rotate(48)"/>
         <use href="#postcard-petal" transform="translate(342 151) rotate(24)"/>
         <use href="#postcard-petal" transform="translate(378 186) rotate(-42)"/>
         <use href="#postcard-petal" transform="translate(411 136) rotate(37)"/>
@@ -80,26 +80,40 @@ artNote: follow the interesting lines
       </g>
       <ellipse cx="358" cy="283" rx="62" ry="10" fill="#85946e" opacity=".28"/>
       <g stroke="#644333" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M329 250c-14-1-24-10-29-21-4-9-13-7-13-1 2 17 11 30 30 37m61-17c13-3 23-14 24-24 1-7 10-9 12-3 0 16-10 34-28 42" fill="#bd895b"/>
+        <path d="M319 269q-2-17 13-24l10 12-6 20m43-8q2-17-13-24l-10 12 6 20" fill="#b78054"/>
+        <path d="M331 275c-10-8-26-4-25 4 1 8 21 9 29 2m37-6c10-8 26-5 26 3 0 9-23 10-30 3" fill="#ab744b"/>
+        <g class="blossom-cub">
+          <g class="blossom-paw blossom-paw-left">
+            <path d="M329 250c-14-1-24-10-29-21-4-9-13-7-13-1 2 17 11 30 30 37Z" fill="#bd895b"/>
+            <use class="blossom-held-petal" href="#postcard-petal" transform="translate(293 222) rotate(-28) scale(.9)" fill="#efacc0" stroke="#bd7088" stroke-width="1"/>
+          </g>
+          <path class="blossom-paw blossom-paw-right" d="M378 248c13-3 23-14 24-24 1-7 10-9 12-3 0 16-10 34-28 42Z" fill="#bd895b"/>
         <path d="M329 231c-13 11-23 26-17 40 6 18 66 19 77 2 7-14-2-31-17-43Z" fill="#bf8d5f"/>
         <ellipse cx="351" cy="263" rx="21" ry="17" fill="#eacaa0" stroke="none"/>
-        <path d="M331 275c-10-8-26-4-25 4 1 8 21 9 29 2m37-6c10-8 26-5 26 3 0 9-23 10-30 3" fill="#ab744b"/>
+        <g class="blossom-cub-head">
         <circle cx="321" cy="194" r="14" fill="#bd895b"/>
         <circle cx="375" cy="184" r="14" fill="#bd895b"/>
         <circle cx="321" cy="194" r="7" fill="#dcae87" stroke="none"/>
         <circle cx="375" cy="184" r="7" fill="#dcae87" stroke="none"/>
         <path d="M315 214c-1-17 13-31 34-34 20-3 39 8 43 25 5 19-10 34-35 36-23 3-41-9-42-27Z" fill="#c99564"/>
         <path d="M338 222c-2-7 4-14 16-16 12-2 21 1 23 8 2 10-10 16-18 17-10 1-19-1-21-9Z" fill="#f3d7ad" stroke="none"/>
-        <path d="M330 207q4-6 9-2m23-6q4-6 9-2" fill="none"/>
+        <path class="blossom-cub-smile-eyes" d="M330 207q4-6 9-2m23-6q4-6 9-2" fill="none"/>
+        <g class="blossom-cub-look" fill="#4e372b" stroke="none">
+          <ellipse cx="334" cy="203" rx="2.5" ry="3.5"/>
+          <ellipse cx="366" cy="195" rx="2.5" ry="3.5"/>
+        </g>
         <path d="M348 211q8-5 14-2-1 5-6 6-4 1-8-4Z" fill="#644333" stroke="none"/>
         <path d="M351 221q7 6 13-3" fill="none" stroke-width="2.2"/>
         <ellipse cx="329" cy="216" rx="5" ry="3" fill="#e6a09b" stroke="none"/>
         <ellipse cx="380" cy="207" rx="5" ry="3" fill="#e6a09b" stroke="none"/>
+        </g>
+        </g>
       </g>
       <g fill="none" stroke="#ad765b" stroke-linecap="round" stroke-width="1.5">
         <path d="M406 195v12m-6-6h12m28-28v8m-4-4h8"/>
       </g>
       <g class="blossom-drift" aria-hidden="true" fill="#eaa2b7" stroke="#bd7088" stroke-width=".8">
+        <g transform="translate(270 119)"><use class="blossom-prize" href="#postcard-petal" fill="#d982a3"/></g>
         <g transform="translate(180 115)"><use href="#postcard-petal" style="--sway:39px;--drop:112px;--delay:0s"/></g>
         <g transform="translate(232 120)"><use href="#postcard-petal" style="--sway:34px;--drop:137px;--delay:.38s"/></g>
         <g transform="translate(254 121)"><use href="#postcard-petal" style="--sway:62px;--drop:146px;--delay:.63s"/></g>
@@ -108,16 +122,77 @@ artNote: follow the interesting lines
         <g transform="translate(327 122)"><use href="#postcard-petal" style="--sway:117px;--drop:159px;--delay:.54s"/></g>
       </g>
     </svg>
-    <figcaption class="hand-note">A little spring shower</figcaption>
+    <figcaption class="hand-note">A little spring shower <button type="button" class="blossom-replay" hidden>Replay the petal chase</button></figcaption>
   </figure>
   <style>
     .blossom-postcard{grid-column:1/-1;justify-self:center;width:min(100%,610px);margin:clamp(5px,2vw,26px) 0 0;padding:clamp(7px,1.5vw,13px);background:#fffdf5;border:1px solid #ddd5c3;border-radius:4px 8px 5px 7px;box-shadow:1px 4px 13px #66544516}
     .blossom-postcard svg{display:block;width:100%;height:auto;border-radius:2px}
     .blossom-postcard figcaption{text-align:center;padding:5px 0 2px}
-    .blossom-drift use{opacity:0;transform-box:fill-box;transform-origin:center}
+    .blossom-replay{display:block;margin:4px auto 0;border:1px solid #b9848d;border-radius:13px;padding:3px 11px;background:#fff5ef;color:#734637;font:600 13px/1.4 var(--sans);cursor:pointer}
+    .blossom-replay[hidden]{display:none}
+    .blossom-replay:hover{background:#f9e4df}
+    .blossom-drift use,.blossom-held-petal,.blossom-cub-look{opacity:0}
+    .blossom-drift use{transform-box:fill-box;transform-origin:center}
+    .blossom-cub,.blossom-cub-head,.blossom-paw{transform-box:view-box}
+    .blossom-cub{transform-origin:350px 276px}
+    .blossom-cub-head{transform-origin:352px 226px}
+    .blossom-paw-left{transform-origin:329px 250px}
+    .blossom-paw-right{transform-origin:378px 248px}
     @media(prefers-reduced-motion:no-preference){
-      .blossom-postcard.is-drifting .blossom-drift use{animation:postcard-petal-drift 3.7s ease-in-out var(--delay) both}
+      .blossom-postcard.is-drifting .blossom-drift use:not(.blossom-prize){animation:postcard-petal-drift 3.7s ease-in-out var(--delay) both}
+      .blossom-postcard.is-drifting .blossom-cub{animation:postcard-cub-rise 4.6s ease-in-out}
+      .blossom-postcard.is-drifting .blossom-cub-head{animation:postcard-cub-watch 4.6s ease-in-out}
+      .blossom-postcard.is-drifting .blossom-paw-left{animation:postcard-left-reach 4.6s ease-in-out}
+      .blossom-postcard.is-drifting .blossom-paw-right{animation:postcard-right-reach 4.6s ease-in-out}
+      .blossom-postcard.is-drifting .blossom-cub-look{animation:postcard-cub-look 4.6s linear}
+      .blossom-postcard.is-drifting .blossom-cub-smile-eyes{animation:postcard-cub-eyes 4.6s linear}
+      .blossom-postcard.is-drifting .blossom-prize{animation:postcard-prize 4.6s linear}
+      .blossom-postcard.is-drifting .blossom-held-petal{animation:postcard-held 4.6s linear}
+      .blossom-postcard.is-drifting .blossom-still-prize{animation:postcard-still-prize 4.6s linear}
     }
+    @media(prefers-reduced-motion:reduce){.blossom-postcard .blossom-replay{display:none}}
+    @keyframes postcard-cub-rise{
+      0%,100%{transform:none}
+      9%{transform:translateY(2px) scaleY(.97)}
+      26%{transform:translate(-2px,-18px) rotate(-5deg)}
+      39%{transform:translate(2px,-16px) rotate(5deg)}
+      60%,64%{transform:translate(-2px,-26px) rotate(-2deg)}
+      82%{transform:translate(0,-8px) rotate(3deg)}
+    }
+    @keyframes postcard-cub-watch{
+      0%,100%{transform:none}
+      13%,28%{transform:rotate(-15deg)}
+      42%{transform:rotate(6deg)}
+      55%,66%{transform:rotate(-8deg)}
+      85%{transform:rotate(-3deg)}
+    }
+    @keyframes postcard-left-reach{
+      0%,100%{transform:none}
+      7%,13%{transform:rotate(-42deg)}
+      28%{transform:rotate(31deg)}
+      41%{transform:rotate(-14deg)}
+      60%,64%{transform:rotate(42deg)}
+      80%,88%{transform:rotate(-14deg)}
+    }
+    @keyframes postcard-right-reach{
+      0%,100%{transform:none}
+      8%,13%{transform:rotate(42deg)}
+      27%{transform:rotate(14deg)}
+      40%{transform:rotate(-50deg)}
+      61%{transform:rotate(-32deg)}
+      82%,88%{transform:rotate(17deg)}
+    }
+    @keyframes postcard-cub-look{0%,7%,75%,100%{opacity:0} 10%,69%{opacity:1}}
+    @keyframes postcard-cub-eyes{0%,7%,75%,100%{opacity:1} 10%,69%{opacity:0}}
+    @keyframes postcard-prize{
+      0%,7%{opacity:0;transform:translate(0,0) rotate(-28deg)}
+      15%{opacity:1;transform:translate(12px,14px) rotate(12deg)}
+      33%{opacity:1;transform:translate(8px,36px) rotate(-27deg)}
+      60%,64%{opacity:1;transform:translate(46px,68px) rotate(21deg)}
+      65%,100%{opacity:0;transform:translate(46px,68px) rotate(21deg)}
+    }
+    @keyframes postcard-held{0%,63%,94%,100%{opacity:0} 65%,88%{opacity:1}}
+    @keyframes postcard-still-prize{0%,94%{opacity:0} 100%{opacity:1}}
     @keyframes postcard-petal-drift{
       0%{opacity:0;transform:translate(0,0) rotate(-35deg)}
       18%{opacity:.95}
@@ -128,14 +203,29 @@ artNote: follow the interesting lines
   <script>
     (() => {
       const postcard = document.getElementById('blossom-postcard');
-      if (!postcard || !('IntersectionObserver' in window) ||
-          !window.matchMedia('(prefers-reduced-motion: no-preference)').matches) return;
-      const observer = new IntersectionObserver((entries) => {
-        if (!entries.some((entry) => entry.isIntersecting)) return;
+      const motion = window.matchMedia('(prefers-reduced-motion: no-preference)');
+      if (!postcard || !motion.matches) return;
+      const replay = postcard.querySelector('.blossom-replay');
+      const play = () => {
+        if (!motion.matches) return;
+        postcard.classList.remove('is-drifting');
+        void postcard.offsetWidth;
         postcard.classList.add('is-drifting');
-        observer.disconnect();
-      }, { threshold: 0.25 });
-      observer.observe(postcard);
+      };
+      let observer;
+      replay.hidden = false;
+      replay.addEventListener('click', () => {
+        observer?.disconnect();
+        play();
+      });
+      if ('IntersectionObserver' in window) {
+        observer = new IntersectionObserver((entries) => {
+          if (!entries.some((entry) => entry.isIntersecting)) return;
+          play();
+          observer.disconnect();
+        }, { threshold: 0.25 });
+        observer.observe(postcard);
+      }
     })();
   </script>
 </section>
