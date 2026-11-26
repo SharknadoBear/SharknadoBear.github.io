@@ -135,7 +135,7 @@ async function verifyGallery(output, prefix) {
   assert.equal(new Set(catalog.packages.map((pet) => pet.file)).size, catalog.packages.length);
   assert.equal((html.match(/class="pet-zip-download"/g) || []).length, catalog.packages.filter((pet) => !pet.residentSlug).length);
   assert(html.indexOf('class="resident-grid"') < html.indexOf('id="codex-pet-skins"'), "Install help follows the resident cards");
-  assert(html.includes('id="codex-pet-prompt"') && html.includes(`src="${prefix}assets/copy-pet-prompt.js"`));
+  assert(html.includes('<textarea id="codex-pet-prompt" rows="8" readonly spellcheck="false">') && html.includes(`src="${prefix}assets/copy-pet-prompt.js"`));
   for (const pet of catalog.packages) {
     assert.match(pet.file, /^[a-z0-9-]+-pet-package\.zip$/);
     assert.match(pet.sha256, /^[a-f0-9]{64}$/);
