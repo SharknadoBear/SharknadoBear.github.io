@@ -83,3 +83,18 @@ h2{font-size:46px}h3{font-size:34px}
 /* Decorative homepage bears beneath the resident project cover. */
 .project-cover .resident-cover-bears{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));align-items:center;justify-items:center;gap:clamp(4px,1vw,8px);margin-top:6px;padding-inline:4px;color:#111}
 .project-cover .resident-cover-bears .walking-bear{width:100%;max-width:46px;height:auto;min-width:0}
+
+/* Download shelf on the resident ID page. */
+.codex-pet-section{scroll-margin-top:1rem}
+.codex-pet-section .section-heading{margin-bottom:20px}
+.codex-pet-section .section-heading h2+p{margin-top:7px}
+.pet-install{background:var(--cream);border:1px solid var(--line);border-radius:5px;padding:clamp(16px,3vw,26px);margin-bottom:18px}
+.pet-install h3{margin:0 0 8px}
+.pet-install pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;line-height:1.5;background:#fbf9f1;border:1px solid var(--line);border-radius:4px;padding:12px 14px;margin:12px 0}
+.pet-install button{background:var(--ink);color:#fff;border:0;border-radius:4px;font:inherit;padding:7px 14px;cursor:pointer}
+.pet-install [role=status]{margin-inline-start:8px}
+.pet-install-note{margin-top:12px;font-size:.9em;overflow-wrap:anywhere}
+.pet-package-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:8px 16px;list-style:none;padding:0;margin:0}
+.pet-package-list li{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px;border-bottom:1px solid var(--line);padding:6px 0}
+.pet-zip-download{color:var(--ink);font:600 25px/1.2 var(--hand);padding-block:4px}
+.pet-zip-size{color:#565c50;font-size:.8em;white-space:nowrap}
