@@ -6,10 +6,12 @@ if (button && prompt && status && navigator.clipboard?.writeText) {
   button.hidden = false;
   button.addEventListener("click", async () => {
     try {
-      await navigator.clipboard.writeText(prompt.textContent.trim());
+      await navigator.clipboard.writeText(prompt.value.trim());
       status.textContent = "Copied.";
     } catch {
-      status.textContent = "Could not copy automatically. Select and copy the prompt above.";
+      prompt.focus();
+      prompt.select();
+      status.textContent = "Prompt selected. Use your keyboard or menu to copy it.";
     }
   });
 }

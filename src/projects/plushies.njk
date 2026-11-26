@@ -51,7 +51,14 @@ art: plushies
   <div class="pet-install">
     <h3>Bring a pet into Codex</h3>
     <p>Download the pet ZIP from its resident card above or from the link below. In a Codex chat that can access your Downloads folder, attach the ZIP or paste its file path, then paste this prompt.</p>
-    <pre id="codex-pet-prompt">Please install this ZIP as a custom pet in ChatGPT Work / Codex. Unzip it into a temporary folder and read pet.json. Use the existing v2 sprite sheet, final/spritesheet-extended.png, with the name and description from pet.json. Validate the sheet and use the supported pet upload flow; don’t regenerate the art or replace any existing pet. If you can’t install it here, tell me exactly which file to upload and where.</pre>
+    <div class="pet-script-box">
+      <label for="codex-pet-prompt">CODEX INSTALL PROMPT</label>
+      <textarea id="codex-pet-prompt" rows="8" readonly spellcheck="false">Please install this ZIP as a custom pet in ChatGPT Work / Codex.
+
+Unzip it into a temporary folder and read pet.json. Use the existing v2 sprite sheet, final/spritesheet-extended.png, with the name and description from pet.json. Validate the sheet and use the supported pet upload flow; don’t regenerate the art or replace any existing pet.
+
+If you can’t install it here, tell me exactly which file to upload and where.</textarea>
+    </div>
     <button type="button" id="copy-pet-prompt" hidden>Copy install prompt</button>
     <span id="pet-prompt-status" role="status"></span>
     <p class="pet-install-note">These ZIPs are asset bundles, not direct installers. If importing manually, unzip first and use the extended PNG. Use <code>final/spritesheet-v1.png</code> only if the importer specifically asks for a 1536 × 1872 sheet.</p>
