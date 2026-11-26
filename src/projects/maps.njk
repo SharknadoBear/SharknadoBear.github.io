@@ -75,4 +75,47 @@ artNote: follow the interesting lines
     })();
   </script>
 </section>
+<section class="project-story model-workflows" id="model-collaboration" aria-labelledby="model-workflows-title">
+  <p class="eyebrow">A WORKFLOW SKETCH</p>
+  <h2 id="model-workflows-title">Who does what?</h2>
+  <div class="prose">
+    <p>A diagram I came across splits the work among a human, Claude, Gemini, and Codex. My version is a little smaller: one Bear wearing two hats, and Codex holding the toolbox.</p>
+  </div>
+  <div class="model-workflow-grid">
+    <section class="model-workflow-card" aria-labelledby="model-workflow-original">
+      <p class="eyebrow">01 / ENGLISH TRANSLATION</p>
+      <h3 id="model-workflow-original">The multi-model workflow</h3>
+      <ol>
+        <li><strong>State the request.</strong> I describe what I need. Claude leads: it clarifies the request, inspects the code and data, and checks what’s live.</li>
+        <li><strong>Write two plans.</strong> Claude and Gemini 4 Neon each propose a plan independently. Claude compares them point by point, combines them, and records whose ideas made it in and why the others didn’t. I make the call.</li>
+        <li><strong>Draft and critique.</strong> Claude drafts the design. Gemini reviews the interactions and copy. Claude decides what to keep and revises the design.</li>
+        <li><strong>Define and build.</strong> Claude sets the interfaces and acceptance criteria, then hands well-defined backend pieces to Codex (GPT‑6.2 Astra). Codex reports back. Claude reads the changes, runs its own tests, and writes the frontend itself.</li>
+        <li><strong>Ship and verify.</strong> Once a pull request is opened, the diagram shows an automated sequence: Codex review (GPT‑6.2 Sol, up to two rounds), automated checks, merge, publish, and verify on the live site.</li>
+      </ol>
+      <p class="model-workflow-note">Translated from the supplied Chinese diagram. Model labels are kept as shown in the source.</p>
+    </section>
+    <section class="model-workflow-card model-workflow-bear" aria-labelledby="model-workflow-bear">
+      <p class="eyebrow">02 / MY VERSION</p>
+      <h3 id="model-workflow-bear">Bear + Codex</h3>
+      <ol>
+        <li><strong>State the request.</strong> I bring the question, the constraints, and what I’d count as a useful result. Codex checks the existing work and flags what’s missing.</li>
+        <li><strong>Put alternatives side by side.</strong> I play both Claude and Gemini here, somewhat less brilliantly. I frame the plan, argue against it, and decide what to try. Codex helps check what’s feasible.</li>
+        <li><strong>Review something real.</strong> Codex brings back a draft, plot, or prototype. I look for what doesn’t make sense and decide what needs another pass.</li>
+        <li><strong>Define and build.</strong> I spell out what must be true before I call it done. Codex implements the pieces, runs the checks, and shows me the evidence. I review the result in context.</li>
+        <li><strong>Ship and verify.</strong> For changes I’m ready to publish, Codex can open the pull request, run the checks, and verify what’s actually live. I decide when the result is ready to share.</li>
+      </ol>
+      <p class="model-workflow-note">One Bear, two hats. Having to explain why I picked one plan over another is the part worth keeping.</p>
+    </section>
+  </div>
+</section>
+<style>
+  .model-workflows .model-workflow-grid{display:grid;grid-column:1/-1;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(12px,2.3vw,28px);align-items:stretch;margin-top:.75rem}
+  .model-workflow-card{min-width:0;padding:clamp(16px,3vw,32px);border:1px solid #d8cfba;border-radius:6px 12px 7px 10px;background:#fffdf5;box-shadow:1px 4px 13px #66544512}
+  .model-workflow-bear{background:#f7f0e4}
+  .model-workflow-card h3{margin:.35rem 0 1.05rem;font-size:clamp(1.25rem,2vw,1.7rem)}
+  .model-workflow-card ol{padding-inline-start:1.35rem;margin:0;line-height:1.55}
+  .model-workflow-card li + li{margin-top:.8rem}
+  .model-workflow-note{margin:1.25rem 0 0;padding-top:.85rem;border-top:1px solid #d8cfba;font-size:.91rem}
+  @media(max-width:700px){.model-workflows .model-workflow-grid{grid-template-columns:1fr}}
+</style>
 <section class="collection-section"><div class="section-heading"><h2>The collection</h2><span class="hand-note">patterns worth a pause</span></div>{% if collections.maps.length %}{% for entry in collections.maps %}{% if entry.data.showFigureInCollection %}{{ entry.templateContent | safe }}{% endif %}{% endfor %}{% set entries = collections.maps %}{% include "entry-list.njk" %}{% else %}<div class="collection-empty"><span class="collection-symbol" aria-hidden="true">∿</span><h3>The first map hasn’t landed yet.</h3><p>A shelf for interesting maps and wiggling lines.<br> Real figures and the stories behind them will arrive here.</p></div>{% endif %}</section>
