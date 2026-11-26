@@ -136,6 +136,9 @@ async function verifyGallery(output, prefix) {
   assert.equal((html.match(/class="pet-zip-download"/g) || []).length, catalog.packages.filter((pet) => !pet.residentSlug).length);
   assert(html.indexOf('class="resident-grid"') < html.indexOf('id="codex-pet-skins"'), "Install help follows the resident cards");
   assert(/<textarea\b(?=[^>]*\bid="codex-pet-prompt")(?=[^>]*\breadonly(?:[\s=>]))[^>]*>/i.test(html) && html.includes(`src="${prefix}assets/copy-pet-prompt.js"`));
+  const prompt = html.match(/<textarea id="codex-pet-prompt"[^>]*>([\s\S]*?)<\/textarea>/)?.[1];
+  assert(prompt?.includes("spritesheet-extended.png") && prompt.includes("spriteVersionNumber"));
+  assert.match(html, /ChatGPT Work on the web:[^]*?spritesheet-v1\.png[^]*?Upload pet/);
   for (const pet of catalog.packages) {
     assert.match(pet.file, /^[a-z0-9-]+-pet-package\.zip$/);
     assert.match(pet.sha256, /^[a-f0-9]{64}$/);

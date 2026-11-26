@@ -53,15 +53,14 @@ art: plushies
     <p>Download the pet ZIP from its resident card above or from the link below. In a Codex chat that can access your Downloads folder, attach the ZIP or paste its file path, then paste this prompt.</p>
     <div class="pet-script-box">
       <label for="codex-pet-prompt">CODEX INSTALL PROMPT</label>
-      <textarea id="codex-pet-prompt" rows="8" readonly spellcheck="false">Please install this ZIP as a custom pet in ChatGPT Work / Codex.
+      <textarea id="codex-pet-prompt" rows="8" readonly spellcheck="false">Install this ZIP as a local pet for my desktop Codex app. Read the ZIP’s pet.json for the name and description, then create a native pet manifest using the installed app’s hatch-pet contract.
 
-Unzip it into a temporary folder and read pet.json. Use the existing v2 sprite sheet, final/spritesheet-extended.png, with the name and description from pet.json. Validate the sheet and use the supported pet upload flow; don’t regenerate the art or replace any existing pet.
-
-If you can’t install it here, tell me exactly which file to upload and where.</textarea>
+For a v2 app, use final/spritesheet-extended.png (1536 × 2288) and set spriteVersionNumber to 2. If my desktop app only supports v1, use final/spritesheet-v1.png (1536 × 1872) with its matching manifest. Validate the existing art without regenerating it. Don’t overwrite another pet. Tell me how to refresh and select this one.</textarea>
     </div>
     <button type="button" id="copy-pet-prompt" hidden>Copy install prompt</button>
     <span id="pet-prompt-status" role="status"></span>
-    <p class="pet-install-note">These ZIPs are asset bundles, not direct installers. If importing manually, unzip first and use the extended PNG. Use <code>final/spritesheet-v1.png</code> only if the importer specifically asks for a 1536 × 1872 sheet.</p>
+    <p class="pet-install-note"><strong>Desktop:</strong> Use the prompt above in Codex on the computer where you want the pet. Desktop pets are stored locally.</p>
+    <p class="pet-install-note"><strong>ChatGPT Work on the web:</strong> Unzip the package and upload <code>final/spritesheet-v1.png</code> in Settings → Personalization → Pet → Select pet → Upload pet, if available. The web uploader takes the PNG, not the ZIP. <a href="https://learn.chatgpt.com/docs/pets">OpenAI Pets guide</a></p>
   </div>
   {% set extraPets = codexPets.packages | rejectattr("residentSlug") %}
   {% if extraPets.length %}
