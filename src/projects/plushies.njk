@@ -9,32 +9,6 @@ intro: "Bear’s den is packed with tenants who help themselves to his food, dri
 status: The census is getting started
 art: plushies
 ---
-<section id="codex-pet-skins" class="collection-section codex-pet-section" aria-labelledby="codex-pets-title">
-  <div class="section-heading">
-    <div>
-      <p class="eyebrow">THE DIGITAL RESIDENTS</p>
-      <h2 id="codex-pets-title">Codex pet skins</h2>
-      <p>Take one of the den’s {{ codexPets.packages.length }} little residents to work with you.</p>
-    </div>
-  </div>
-  <div class="pet-install">
-    <h3>Bring a pet into Codex</h3>
-    <p>Download a ZIP below. In a Codex chat that can access your Downloads folder, attach the ZIP or paste its file path, then paste this prompt.</p>
-    <pre id="codex-pet-prompt">Please install this ZIP as a custom pet in ChatGPT Work / Codex. Unzip it into a temporary folder and read pet.json. Use the existing v2 sprite sheet, final/spritesheet-extended.png, with the name and description from pet.json. Validate the sheet and use the supported pet upload flow; don’t regenerate the art or replace any existing pet. If you can’t install it here, tell me exactly which file to upload and where.</pre>
-    <button type="button" id="copy-pet-prompt" hidden>Copy install prompt</button>
-    <span id="pet-prompt-status" role="status"></span>
-    <p class="pet-install-note">These ZIPs are asset bundles, not direct installers. If importing manually, unzip first and use the extended PNG. Use <code>final/spritesheet-v1.png</code> only if the importer specifically asks for a 1536 × 1872 sheet.</p>
-  </div>
-  <ul class="pet-package-list">
-    {% for pet in codexPets.packages %}
-    <li id="pet-{{ pet.slug }}">
-      <a class="pet-zip-download" href="{{ codexPets.releaseBase }}{{ pet.file }}" aria-label="Download {{ pet.name | escape }} Codex pet ZIP">{{ pet.name | escape }} <span aria-hidden="true">&#8595;</span></a>
-      <span class="pet-zip-size">ZIP · {{ pet.sizeMB }} MB</span>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-<script src="/assets/copy-pet-prompt.js" defer></script>
 <section class="collection-section resident-section" aria-labelledby="residents-title">
   <div class="section-heading">
     <div>
@@ -67,6 +41,35 @@ art: plushies
     {% endfor %}
   </div>
 </section>
+<section id="codex-pet-skins" class="collection-section codex-pet-section" aria-labelledby="codex-pets-title">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">THE DIGITAL RESIDENTS</p>
+      <h2 id="codex-pets-title">Codex pet skins</h2>
+      </div>
+  </div>
+  <div class="pet-install">
+    <h3>Bring a pet into Codex</h3>
+    <p>Download the pet ZIP from its resident card above or from the link below. In a Codex chat that can access your Downloads folder, attach the ZIP or paste its file path, then paste this prompt.</p>
+    <pre id="codex-pet-prompt">Please install this ZIP as a custom pet in ChatGPT Work / Codex. Unzip it into a temporary folder and read pet.json. Use the existing v2 sprite sheet, final/spritesheet-extended.png, with the name and description from pet.json. Validate the sheet and use the supported pet upload flow; don’t regenerate the art or replace any existing pet. If you can’t install it here, tell me exactly which file to upload and where.</pre>
+    <button type="button" id="copy-pet-prompt" hidden>Copy install prompt</button>
+    <span id="pet-prompt-status" role="status"></span>
+    <p class="pet-install-note">These ZIPs are asset bundles, not direct installers. If importing manually, unzip first and use the extended PNG. Use <code>final/spritesheet-v1.png</code> only if the importer specifically asks for a 1536 × 1872 sheet.</p>
+  </div>
+  {% set extraPets = codexPets.packages | rejectattr("residentSlug") %}
+  {% if extraPets.length %}
+  <h3>Pets without an ID card</h3>
+  <ul class="pet-package-list">
+    {% for pet in extraPets %}
+    <li id="pet-{{ pet.slug }}">
+      <a class="pet-zip-download" href="{{ codexPets.releaseBase }}{{ pet.file }}" aria-label="Download {{ pet.name | escape }} Codex pet ZIP">{{ pet.name | escape }} <span aria-hidden="true">&#8595;</span></a>
+      <span class="pet-zip-size">ZIP · {{ pet.sizeMB }} MB</span>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>
+<script src="/assets/copy-pet-prompt.js" defer></script>
 {% if collections.plushies.length %}
 <section class="collection-section resident-stories" aria-labelledby="resident-stories-title">
   <div class="section-heading"><h2 id="resident-stories-title">Resident stories</h2></div>
