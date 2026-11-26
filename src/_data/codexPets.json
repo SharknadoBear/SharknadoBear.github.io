@@ -1,0 +1,186 @@
+{
+  "releaseBase": "https://github.com/SharknadoBear/SharknadoBear.github.io/releases/download/codex-pet-skins-v1/",
+  "packages": [
+    {
+      "slug": "3head-bear",
+      "name": "3Head Bear",
+      "residentSlug": "3head-bear",
+      "file": "3head-bear-pet-package.zip",
+      "sizeMB": 11.2,
+      "sha256": "8899a015bd352d11a7bb83d3a4d95185839a22b60708bc097af706e542645f05"
+    },
+    {
+      "slug": "bear-5-5",
+      "name": "Bear 5.5",
+      "residentSlug": "bear-5-5",
+      "file": "bear-5-5-pet-package.zip",
+      "sizeMB": 10.7,
+      "sha256": "36aa2ef326a40a665fe34e4184fde1ebd1bdde8249fe6ebb507f9c1445f3d871"
+    },
+    {
+      "slug": "bear-30",
+      "name": "Bear 30",
+      "residentSlug": "bear-30",
+      "file": "bear-30-pet-package.zip",
+      "sizeMB": 10.2,
+      "sha256": "5c4364f860180f751bdee02ec3a5af9fe09fc99fe04cd4a76ce27d2f7982125b"
+    },
+    {
+      "slug": "bear-38",
+      "name": "Bear 38",
+      "residentSlug": "bear-38",
+      "file": "bear-38-pet-package.zip",
+      "sizeMB": 9.9,
+      "sha256": "e00bf5de0384ccd26f56c06ce0821f46d7564b6270507b3dce7e64270fbdfd0d"
+    },
+    {
+      "slug": "bear-boss",
+      "name": "Bear Boss",
+      "residentSlug": "bear-boss",
+      "file": "bear-boss-pet-package.zip",
+      "sizeMB": 10.7,
+      "sha256": "e111eec578e7090ed6c0e8264439cf13e97e1194853dc6e1216e47541e3eddb9"
+    },
+    {
+      "slug": "big-bird",
+      "name": "Big Bird",
+      "residentSlug": "big-bird",
+      "file": "big-bird-pet-package.zip",
+      "sizeMB": 9.0,
+      "sha256": "b97691803306528b3dd444fe8fc44003f63593d132d5ce2861314a71925f69ea"
+    },
+    {
+      "slug": "bouquet",
+      "name": "Bouquet",
+      "residentSlug": "bouquet",
+      "file": "bouquet-pet-package.zip",
+      "sizeMB": 8.8,
+      "sha256": "424972bb4a410a2ef09b6b3ea81e3b78b27c7ffa5c2ad9ee93ae90b4b502cb6e"
+    },
+    {
+      "slug": "domtri-hachiware",
+      "name": "Domtri Hachiware",
+      "residentSlug": "domtri-hachiware",
+      "file": "domtri-hachiware-pet-package.zip",
+      "sizeMB": 12.5,
+      "sha256": "84df8161d3948789b3165b9478dd8df20ded5deebf55f194d58d04990dc89c56"
+    },
+    {
+      "slug": "gator-1",
+      "name": "Gator 1",
+      "residentSlug": "gator-1",
+      "file": "gator-1-pet-package.zip",
+      "sizeMB": 9.0,
+      "sha256": "b2a4d3656ddf3dea7974422076a0f4a06ce76f6341b1559e229bb976aaa791b9"
+    },
+    {
+      "slug": "gangar",
+      "name": "Gengar",
+      "residentSlug": "gengar",
+      "file": "gangar-pet-package.zip",
+      "sizeMB": 12.4,
+      "sha256": "194d52347b7f76f78e75c9fce5affc2f1006ab0e21d75fd04d92e0a32da70af2"
+    },
+    {
+      "slug": "monk-ode",
+      "name": "MONK ODE",
+      "residentSlug": "monk-ode",
+      "file": "monk-ode-pet-package.zip",
+      "sizeMB": 9.5,
+      "sha256": "b68002e77a3b77e5402b688c07725aa8bfda41572e8b9653825158dd423f3f7d"
+    },
+    {
+      "slug": "moski-bear",
+      "name": "Moski Bear",
+      "residentSlug": "moski-bear",
+      "file": "moski-bear-pet-package.zip",
+      "sizeMB": 11.7,
+      "sha256": "f493b37da9be52b33453c2cee21b504ea8effd0a66e5d0b99781bcc3b08c0b6c"
+    },
+    {
+      "slug": "pig-3",
+      "name": "Pig 3",
+      "residentSlug": null,
+      "file": "pig-3-pet-package.zip",
+      "sizeMB": 9.9,
+      "sha256": "524b61c1a426b3370627978ee8f6579dc37af400d48396b80d573727fc4b5361"
+    },
+    {
+      "slug": "pig-boss",
+      "name": "Pig Boss",
+      "residentSlug": "pig-boss",
+      "file": "pig-boss-pet-package.zip",
+      "sizeMB": 10.5,
+      "sha256": "aaa661f760a40e27bb632f739574c3ce15a35dace3408fad6046cb49a27ca82a"
+    },
+    {
+      "slug": "piggy",
+      "name": "Piggy",
+      "residentSlug": "piggy",
+      "file": "piggy-pet-package.zip",
+      "sizeMB": 12.8,
+      "sha256": "a718678eaba3b848be0b0f9a2021a011a37382bc6b2630bc1bf263960b45148d"
+    },
+    {
+      "slug": "pumpkin",
+      "name": "Pumpkin",
+      "residentSlug": "pumpkin",
+      "file": "pumpkin-pet-package.zip",
+      "sizeMB": 15.0,
+      "sha256": "3239272f0c19622837c330adb36ef7916c0e5463053791debd0d636c97dfa992"
+    },
+    {
+      "slug": "shark-1",
+      "name": "Shark 1",
+      "residentSlug": "shark-1",
+      "file": "shark-1-pet-package.zip",
+      "sizeMB": 8.7,
+      "sha256": "355aa00a423f9ca3fdfbdf647c55932ae2cfb541ed240d2474359b669743f968"
+    },
+    {
+      "slug": "shark-2",
+      "name": "Shark 2",
+      "residentSlug": "shark-2",
+      "file": "shark-2-pet-package.zip",
+      "sizeMB": 8.8,
+      "sha256": "7b12fdd4c2142c8a04d2c10f3c746dbe195a121bdcd4146811525a1ae872aeba"
+    },
+    {
+      "slug": "shark-6",
+      "name": "Shark 6",
+      "residentSlug": "shark-6",
+      "file": "shark-6-pet-package.zip",
+      "sizeMB": 8.7,
+      "sha256": "faea6267b531d967cea6e63a199665197f83c82060d2124e5cce08f1679533c3"
+    },
+    {
+      "slug": "tom-nook",
+      "name": "Tom Nook",
+      "residentSlug": "tom-nook",
+      "file": "tom-nook-pet-package.zip",
+      "sizeMB": 10.6,
+      "sha256": "66d6dc70d1dcc63ce62cd090fd93069d6e8a6267348f0b1af14f421a9db1f098"
+    }
+  ],
+  "byResident": {
+    "3head-bear": "3head-bear-pet-package.zip",
+    "bear-5-5": "bear-5-5-pet-package.zip",
+    "bear-30": "bear-30-pet-package.zip",
+    "bear-38": "bear-38-pet-package.zip",
+    "bear-boss": "bear-boss-pet-package.zip",
+    "big-bird": "big-bird-pet-package.zip",
+    "bouquet": "bouquet-pet-package.zip",
+    "domtri-hachiware": "domtri-hachiware-pet-package.zip",
+    "gator-1": "gator-1-pet-package.zip",
+    "gengar": "gangar-pet-package.zip",
+    "monk-ode": "monk-ode-pet-package.zip",
+    "moski-bear": "moski-bear-pet-package.zip",
+    "pig-boss": "pig-boss-pet-package.zip",
+    "piggy": "piggy-pet-package.zip",
+    "pumpkin": "pumpkin-pet-package.zip",
+    "shark-1": "shark-1-pet-package.zip",
+    "shark-2": "shark-2-pet-package.zip",
+    "shark-6": "shark-6-pet-package.zip",
+    "tom-nook": "tom-nook-pet-package.zip"
+  }
+}

@@ -129,7 +129,20 @@ async function verifyGallery(output, prefix) {
   const ids = [...html.matchAll(/<h3 id="resident-([^"]+)"/g)].map((match) => match[1]);
   assert.deepEqual(ids, residents.map((resident) => resident.slug), "Rendered residents preserve the approved data order");
   assert(html.includes(`class="resident-count">${residents.length} residents in the den.</p>`), "The gallery displays its data-driven count");
-  assert.equal((html.match(/class="resident-pet-pending"/g) || []).length, residents.filter((resident) => !resident.petPackage).length);
+  const catalog = JSON.parse(await readFile(path.join(input, "_data", "codexPets.json"), "utf8"));
+  const residentReleaseFiles = Object.fromEntries(catalog.packages.filter((pet) => pet.residentSlug).map((pet) => [pet.residentSlug, pet.file]));
+  assert.deepEqual(catalog.byResident, residentReleaseFiles, "The pet catalog and resident links agree");
+  assert.equal(new Set(catalog.packages.map((pet) => pet.file)).size, catalog.packages.length);
+  assert.equal((html.match(/class="pet-zip-download"/g) || []).length, catalog.packages.length);
+  assert(html.includes('id="codex-pet-prompt"') && html.includes(`src="${prefix}assets/copy-pet-prompt.js"`));
+  for (const pet of catalog.packages) {
+    assert.match(pet.file, /^[a-z0-9-]+-pet-package\.zip$/);
+    assert.match(pet.sha256, /^[a-f0-9]{64}$/);
+    assert(html.includes(`class="pet-zip-download" href="${catalog.releaseBase}${pet.file}"`));
+    if (pet.residentSlug) assert(residents.some((resident) => resident.slug === pet.residentSlug));
+  }
+  assert.equal((html.match(/class="resident-pet-release"/g) || []).length, residents.filter((resident) => !resident.petPackage && catalog.byResident[resident.slug]).length);
+  assert.equal((html.match(/class="resident-pet-pending"/g) || []).length, residents.filter((resident) => !resident.petPackage && !catalog.byResident[resident.slug]).length);
   assert.equal((html.match(/class="resident-pet-download"/g) || []).length, residents.filter((resident) => resident.petPackage).length);
   for (const resident of residents) {
     const image = `${prefix}${resident.image.slice(1)}`;
