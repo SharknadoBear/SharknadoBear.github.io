@@ -133,13 +133,22 @@ async function verifyGallery(output, prefix) {
   const residentReleaseFiles = Object.fromEntries(catalog.packages.filter((pet) => pet.residentSlug).map((pet) => [pet.residentSlug, pet.file]));
   assert.deepEqual(catalog.byResident, residentReleaseFiles, "The pet catalog and resident links agree");
   assert.equal(new Set(catalog.packages.map((pet) => pet.file)).size, catalog.packages.length);
-  assert.equal((html.match(/class="pet-zip-download"/g) || []).length, catalog.packages.length);
+  assert.equal((html.match(/class="pet-zip-download"/g) || []).length, catalog.packages.filter((pet) => !pet.residentSlug).length);
+  assert(html.indexOf('class="resident-grid"') < html.indexOf('id="codex-pet-skins"'), "Install help follows the resident cards");
   assert(html.includes('id="codex-pet-prompt"') && html.includes(`src="${prefix}assets/copy-pet-prompt.js"`));
   for (const pet of catalog.packages) {
     assert.match(pet.file, /^[a-z0-9-]+-pet-package\.zip$/);
     assert.match(pet.sha256, /^[a-f0-9]{64}$/);
-    assert(html.includes(`class="pet-zip-download" href="${catalog.releaseBase}${pet.file}"`));
-    if (pet.residentSlug) assert(residents.some((resident) => resident.slug === pet.residentSlug));
+    const link = `href="${catalog.releaseBase}${pet.file}"`;
+    const resident = residents.find((row) => row.slug === pet.residentSlug);
+    assert.equal(html.split(link).length - 1, resident?.petPackage ? 0 : 1, "Each release ZIP is linked exactly once");
+    if (!pet.residentSlug) assert(html.includes(`class="pet-zip-download" ${link}`));
+    else {
+      assert(resident, "The mapped resident must exist");
+      const card = html.split(`aria-labelledby="resident-${resident.slug}">`)[1]?.split("</article>")[0];
+      assert(card?.includes('class="resident-id-download"'), "The resident card keeps the PDF");
+      if (!resident.petPackage) assert(card.includes(`class="resident-pet-release" ${link}`), "The ZIP belongs below the correct card");
+    }
   }
   assert.equal((html.match(/class="resident-pet-release"/g) || []).length, residents.filter((resident) => !resident.petPackage && catalog.byResident[resident.slug]).length);
   assert.equal((html.match(/class="resident-pet-pending"/g) || []).length, residents.filter((resident) => !resident.petPackage && !catalog.byResident[resident.slug]).length);
